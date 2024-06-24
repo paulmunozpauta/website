@@ -1,5 +1,8 @@
 ## Hi there 👋
 
+I am interested in developing AI tools and models for Water and Climate
+
+
 <!--
 **paulmunozpauta/paulmunozpauta** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
