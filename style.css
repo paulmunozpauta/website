@@ -22,6 +22,14 @@ header p {
     margin: 5px 0 15px;
 }
 
+.profile-pic {
+    width: 10%;          /* Scale image width to 10% of its original size */
+    height: auto;        /* Maintain the aspect ratio */
+    border-radius: 50%;  /* Optional: Make the image circular */
+    display: block;      /* Center the image */
+    margin: 0 auto;      /* Center horizontally */
+}
+
 nav {
     background: #444;
     color: white;
