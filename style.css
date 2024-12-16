@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+/* Header Section */
 header {
     text-align: center;
     background-color: #0073e6;
@@ -21,6 +22,7 @@ header p {
     margin: 5px 0 15px;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     height: 400px; /* Adjust height for your hero section */
@@ -33,25 +35,58 @@ header p {
 }
 
 .hero-content {
-    position: relative; /* Keep content on top of the background */
+    position: relative; /* Keeps content above background */
     z-index: 2;
     text-align: center;
-    color: white; /* Text color for contrast */
-    padding: 10px 20px;
-    display: inline-block; /* Ensure the background only covers the text */
-    background: rgba(50, 50, 50, 0.7); /* Grey background with 70% opacity */
-    border-radius: 8px; /* Optional: Rounded corners */
 }
-
 
 .profile-pic {
     width: 200px; /* Adjust size of profile picture */
     height: auto;
     border-radius: 50%; /* Make it circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a slight shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
 }
 
+/* Description and Social Links Box */
+.text-and-icons-box {
+    background: rgba(50, 50, 50, 0.7); /* Semi-transparent gray */
+    padding: 10px 20px; /* Add spacing */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Space above */
+    display: inline-block;
+    text-align: center; /* Align content */
+}
 
+.description-box p {
+    margin: 0;
+    color: white; /* Text color */
+    font-size: 1em;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 10px; /* Space above icons */
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.social-icon {
+    width: 32px; /* Size of social icons */
+    height: 32px;
+    border-radius: 50%; /* Circular icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Navigation Section */
 nav {
     background: #444;
     color: white;
@@ -75,6 +110,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main Section */
 main {
     padding: 20px;
     max-width: 800px;
@@ -92,21 +128,15 @@ main ul {
     padding-left: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #0073e6;
-    color: white;
-    margin-top: 20px;
-}
+/* Publications Section */
 #publications ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
 #publications li {
-    margin-bottom: 15px; /* Adds space between items */
-    line-height: 1.5;    /* Improves readability */
+    margin-bottom: 15px; /* Space between items */
+    line-height: 1.5; /* Improves readability */
 }
 
 #publications a {
@@ -117,38 +147,12 @@ footer {
 #publications a:hover {
     text-decoration: underline;
 }
-.social-links {
-    margin-top: 10px; /* Adds space above the links */
+
+/* Footer Section */
+footer {
     text-align: center;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 0 10px; /* Space between icons */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.social-links a:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-.social-icon {
-    width: 32px; /* Adjust size of icons */
-    height: 32px;
-    border-radius: 50%; /* Optional: Circular icons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a clean look */
-}
-.description-box {
-    background: rgba(50, 50, 50, 0.7); /* Semi-transparent grey */
-    padding: 10px 20px; /* Add spacing around the text */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    display: inline-block; /* Box adjusts to text size */
-    margin-top: 10px; /* Add space above */
-}
-
-.description-box p {
-    margin: 0; /* Remove default paragraph margins */
-    color: white; /* Ensure text is visible */
-    font-size: 1em; /* Adjust text size as needed */
-    text-align: center;
+    padding: 10px 0;
+    background: #0073e6;
+    color: white;
+    margin-top: 20px;
 }
