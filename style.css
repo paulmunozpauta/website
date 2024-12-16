@@ -22,8 +22,30 @@ header p {
     margin: 5px 0 15px;
 }
 
+.hero {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    background: none; /* Remove solid color */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.jpg') no-repeat center center/cover; /* Background image */
+    background-size: cover;
+    opacity: 0.5; /* 50% transparency */
+    z-index: 1; /* Place the background behind the content */
+}
+
 .hero-content {
-    text-align: center;   /* Center text and image */
+    position: relative;
+    z-index: 2; /* Keep content above the background */
+    text-align: center;
+    color: white; /* Text color */
     padding: 20px;
 }
 
