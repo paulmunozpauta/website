@@ -12,7 +12,6 @@
         <div class="hero-content">
             <img src="images/profile_pic2.jpg" alt="Paul Muñoz" class="profile-pic">
             <h1>Paul Muñoz</h1>
-            <!-- Add a smaller container only for text and icons -->
             <div class="description-icons-box">
                 <p class="description-text">AI for Water & Climate Science | Hydrological Forecasting Researcher</p>
                 <div class="social-links">
@@ -27,126 +26,56 @@
         </div>
     </header>
     
-    
-
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="supervision.html">Supervision</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <!-- About Section -->
-
-Hello 👋! I’m Paul Muñoz, a hydrology and AI researcher developing tools and models for **hydrological forecasting** and **climate applications**. My work bridges advanced machine learning, satellite remote sensing, and applied science to solve real-world water management challenges.
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Applied Science Projects</h2>
-        <div class="project">
-            <h3>Real-Time Flash Flood Forecasting</h3>
-            <p>Designed AI-driven flash flood models integrating satellite precipitation data and machine learning to enhance early warning systems.</p>
-        </div>
-        <div class="project">
-            <h3>Hydrological Data Integration</h3>
-            <p>Integrated GOES-16 satellite data with hydrological models to reduce latency and improve river flow predictions.</p>
-        </div>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello 👋! I’m Paul Muñoz, a hydrology and AI researcher developing tools and models for 
+            <strong>hydrological forecasting</strong> and <strong>climate applications</strong>. 
+            My work bridges advanced machine learning, satellite remote sensing, and applied science 
+            to solve real-world water management challenges.
+        </p>
     </section>
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <h2>Recent Publications</h2>
-        <ul>
-            <li>
-                Montenegro, M., Célleri, R., Orellana-Alvear, J., Muñoz, P., & Córdova, M. (2025). 
-                <a href="https://doi.org/PLACEHOLDER1" target="_blank">
-                    Precipitation forecasting using random forest over an Ecuadorian Andes basin
-                </a>. 
-                <i>Meteorology and Atmospheric Physics, 137</i>(1), 1-12.
-            </li>
-            <li>
-                Muñoz, P., Corzo, G., Solomatine, D., Feyen, J., & Célleri, R. (2024). 
-                <a href="https://doi.org/PLACEHOLDER2" target="_blank">
-                    Near-real-time satellite precipitation data ingestion into peak runoff forecasting models
-                </a>. 
-                <i>Environmental Modelling & Software, 160</i>, 105582.
-            </li>
-            <li>
-                Merizalde, M. J., Muñoz, P., Corzo, G., Muñoz, D. F., Samaniego, E., & Célleri, R. (2024). 
-                <a href="https://doi.org/PLACEHOLDER3" target="_blank">
-                    Integrating geographic data and the SCS-CN method with LSTM networks for enhanced runoff forecasting in a complex mountain basin
-                </a>. 
-                <i>Frontiers in Water, 5</i>, 1233899.
-            </li>
-            <li>
-                Muñoz, P., Muñoz, D. F., Orellana-Alvear, J., & Célleri, R. (2024). 
-                <a href="https://doi.org/PLACEHOLDER4" target="_blank">
-                    Enhancing runoff forecasting through the integration of satellite precipitation data and hydrological knowledge into machine learning models
-                </a>. 
-                <i>Natural Hazards</i>, 1-23.
-            </li>
-            <li>
-                Muñoz, P., Corzo, G. A., Solomatine, D. P., Feyen, J., & Célleri, R. (2023). 
-                <a href="https://doi.org/PLACEHOLDER5" target="_blank">
-                    Use of near‐real‐time satellite precipitation data and machine learning to improve extreme runoff modeling
-                </a>. 
-                <i>Advanced Hydroinformatics: Machine Learning and Optimization for Water …</i>.
-            </li>
-        </ul>
-    </section>
-    
-    
-    <!-- CV Section -->
-    <section id="cv" class="section">
-        <h2>My CV</h2>
-        <p>Download my latest CV below:</p>
-        <a href="CV/CV_PMunoz_Oct24.pdf" download class="btn">Download CV</a>
-    
-    </section>
-    <!-- networks Section -->
 
-    <section id="social-posts">
+    <!-- Social Media Section -->
+    <section id="social-posts" class="section">
         <h2>Latest Social Media Updates</h2>
-    
         <div id="x-posts">
             <h3>Latest X (Twitter) Posts</h3>
             <ul id="x-posts-list"></ul>
         </div>
-    
     </section>
-    
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <form action="mailto:paulmunoz@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-        <p>Or connect with me:</p>
-        <ul>
-            <li>Email: <a href="mailto:paulmunoz@example.com">paul.munoz@vub.be</a></li>
-            <li>GitHub: <a href="https://github.com/paulmunozpauta" target="_blank">github.com/paulmunozpauta</a></li>
-        </ul>
-    </section>
-
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Paul Muñoz Pauta. All rights reserved.</p>
     </footer>
 
-
-
+    <!-- JavaScript to Load X Posts -->
+    <script>
+        // Fetch and display X posts
+        fetch("x_posts.json")
+            .then(response => response.json())
+            .then(data => {
+                const postsList = document.getElementById("x-posts-list");
+                data.data.forEach(post => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = post.text;
+                    postsList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error("Error fetching X posts:", error));
+    </script>
 </body>
 </html>
