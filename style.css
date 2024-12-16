@@ -23,7 +23,7 @@ header p {
 }
 
 .profile-pic {
-    width: 20%;           /* Resize image to 10% of its parent container */
+    width: 30%;           /* Resize image to 10% of its parent container */
     height: auto;         /* Maintain aspect ratio */
     border-radius: 50%;   /* Optional: Circular shape */
     display: block;       /* Makes the image a block element */
