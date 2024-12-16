@@ -23,9 +23,10 @@ header p {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     position: relative;
-    height: 400px; /* Adjust height for your hero section */
+    padding: 50px 0; /* Vertical padding to maintain section height */
     background: url('images/background.jpg') no-repeat center center / cover;
     display: flex;
     justify-content: center;
@@ -33,38 +34,26 @@ header p {
     text-align: center;
 }
 
-/* Header section styling for all pages */
-.hero {
-    position: relative;
-    height: 200px; /* Adjust the height for the thin layout */
-    background: url('images/background.jpg') no-repeat center center / cover; /* Background image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 2.5em; /* Adjust heading size */
-    font-weight: bold;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Slight text shadow for readability */
-}
-
-
+/* Hero Content Styling */
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
 }
 
 .profile-pic {
-    width: 200px;
+    width: 200px; /* Adjust size as needed */
     height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for visual effect */
+    margin-bottom: 15px; /* Space below image */
 }
 
+.hero h1 {
+    font-size: 2.5em; /* Adjust heading size */
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for readability */
+}
 /* Description and Social Links Box */
 .description-icons-box {
     background: rgba(50, 50, 50, 0.7); /* Semi-transparent gray */
