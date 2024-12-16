@@ -117,3 +117,24 @@ footer {
 #publications a:hover {
     text-decoration: underline;
 }
+.social-links {
+    margin-top: 10px; /* Adds space above the links */
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.social-icon {
+    width: 32px; /* Adjust size of icons */
+    height: 32px;
+    border-radius: 50%; /* Optional: Circular icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a clean look */
+}
