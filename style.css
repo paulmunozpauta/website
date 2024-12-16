@@ -138,3 +138,17 @@ footer {
     border-radius: 50%; /* Optional: Circular icons */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a clean look */
 }
+.description-box {
+    background: rgba(50, 50, 50, 0.7); /* Semi-transparent grey */
+    padding: 10px 20px; /* Add spacing around the text */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    display: inline-block; /* Box adjusts to text size */
+    margin-top: 10px; /* Add space above */
+}
+
+.description-box p {
+    margin: 0; /* Remove default paragraph margins */
+    color: white; /* Ensure text is visible */
+    font-size: 1em; /* Adjust text size as needed */
+    text-align: center;
+}
