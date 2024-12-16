@@ -199,21 +199,3 @@ a:hover {
     text-decoration: underline;
     color: #005bb5;
 }
-
-/* CV Button Styling */
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #333; /* Dark Gray */
-    color: #fff; /* White text */
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    margin: 20px auto; /* Centers the button horizontally */
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #555; /* Slightly lighter gray on hover */
-}
-
