@@ -26,8 +26,7 @@ header p {
 .hero {
     position: relative;
     height: 400px; /* Adjust height for your hero section */
-    background: url('images/background.jpg') no-repeat center center / cover; /* Background image */
-    background-size: cover; /* Ensure the image fills the container */
+    background: url('images/background.jpg') no-repeat center center / cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,57 +34,54 @@ header p {
 }
 
 .hero-content {
-    position: relative; /* Keeps content above background */
+    position: relative;
     z-index: 2;
     text-align: center;
 }
 
 .profile-pic {
-    width: 200px; /* Adjust size of profile picture */
+    width: 200px;
     height: auto;
-    border-radius: 50%; /* Make it circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Description and Social Links Box */
-.text-and-icons-box {
+.description-icons-box {
     background: rgba(50, 50, 50, 0.7); /* Semi-transparent gray */
-    padding: 10px 20px; /* Add spacing */
-    border-radius: 8px; /* Rounded corners */
-    margin-top: 10px; /* Space above */
-    display: inline-block;
-    text-align: center; /* Align content */
-}
-
-.description-box p {
-    margin: 0;
-    color: white; /* Text color */
-    font-size: 1em;
-}
-
-/* Social Links */
-.social-links {
-    margin-top: 10px; /* Space above icons */
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px auto; /* Centers and adds spacing */
+    display: inline-block; /* Shrink box to content */
     text-align: center;
 }
 
+.description-text {
+    color: white;
+    margin: 0 0 10px 0; /* Add small spacing below text */
+    font-size: 1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
 .social-links a {
-    display: inline-block;
-    margin: 0 10px; /* Space between icons */
     transition: transform 0.3s ease;
 }
 
 .social-links a:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 .social-icon {
-    width: 32px; /* Size of social icons */
+    width: 32px;
     height: 32px;
-    border-radius: 50%; /* Circular icons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-
 /* Navigation Section */
 nav {
     background: #444;
