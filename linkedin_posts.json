@@ -1,10 +1,10 @@
 import requests
 
 # Replace with your LinkedIn Access Token
-ACCESS_TOKEN = "YOUR_LINKEDIN_ACCESS_TOKEN"
+ACCESS_TOKEN = "WPL_AP1.mvuuOFivpU4zMJRa.IFdECQ=="
 
 # LinkedIn API URL to get user posts
-url = "https://api.linkedin.com/v2/ugcPosts?q=authors&authors=urn:li:person:YOUR_PERSON_ID"
+url = "https://api.linkedin.com/v2/ugcPosts?q=authors&authors=urn:li:person:paul-muñoz-424432225"
 
 headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}
 
