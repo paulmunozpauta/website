@@ -1,0 +1,16 @@
+import requests
+
+# Replace with your LinkedIn Access Token
+ACCESS_TOKEN = "YOUR_LINKEDIN_ACCESS_TOKEN"
+
+# LinkedIn API URL to get user posts
+url = "https://api.linkedin.com/v2/ugcPosts?q=authors&authors=urn:li:person:YOUR_PERSON_ID"
+
+headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}
+
+response = requests.get(url, headers=headers)
+posts = response.json()
+
+# Save or display the posts
+for post in posts["elements"]:
+    print(post["specificContent"]["com.linkedin.ugc.ShareContent"]["shareCommentary"]["text"])
