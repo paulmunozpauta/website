@@ -199,3 +199,26 @@ a:hover {
     text-decoration: underline;
     color: #005bb5;
 }
+/* Education Section Styling */
+.education-list {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Controls width for better readability */
+}
+
+.education-list li {
+    margin-bottom: 20px; /* Adds space between education items */
+    line-height: 1.6; /* Improves readability */
+}
+
+.education-list strong {
+    font-size: 1.1em; /* Slightly larger font for dates */
+    color: #333; /* Dark gray for emphasis */
+}
+
+.education-list em {
+    color: #555; /* Slightly lighter gray for university names */
+    display: block; /* Moves university names to a new line */
+    font-style: italic;
+}
