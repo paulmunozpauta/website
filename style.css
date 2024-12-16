@@ -33,6 +33,15 @@ header p {
     text-align: center;
 }
 
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em; /* Adjust heading size */
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Slight text shadow for readability */
+}
+
+
 .hero-content {
     position: relative;
     z-index: 2;
