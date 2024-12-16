@@ -33,10 +33,16 @@ header p {
 }
 
 .hero-content {
-    position: relative; /* Ensure content (profile pic, text) is above the background */
-    z-index: 2; /* Place content above the background image */
-    color: white; /* Adjust text color for contrast */
+    position: relative; /* Keep content on top of the background */
+    z-index: 2;
+    text-align: center;
+    color: white; /* Text color for contrast */
+    padding: 10px 20px;
+    display: inline-block; /* Ensure the background only covers the text */
+    background: rgba(50, 50, 50, 0.7); /* Grey background with 70% opacity */
+    border-radius: 8px; /* Optional: Rounded corners */
 }
+
 
 .profile-pic {
     width: 200px; /* Adjust size of profile picture */
