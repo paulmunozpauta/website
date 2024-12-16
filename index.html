@@ -4,57 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Muñoz Pauta</title>
-    <!-- Linking the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Paul Muñoz Pauta</h1>
-        <p>AI Tools & Models for Water and Climate Science</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Paul Muñoz Pauta" class="profile-pic">
+            <h1>Paul Muñoz Pauta</h1>
+            <p>AI for Water & Climate Science | Hydrological Forecasting Researcher</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#cv">CV</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! 👋 I’m Paul Muñoz Pauta, a researcher developing AI tools and models for Water and Climate Science. My work focuses on integrating machine learning and hydrological knowledge to improve forecasting systems.</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello 👋! I’m Paul Muñoz Pauta, a hydrology and AI researcher developing tools and models for **hydrological forecasting** and **climate applications**. My work bridges advanced machine learning, satellite remote sensing, and applied science to solve real-world water management challenges.</p>
+    </section>
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li><a href="https://doi.org/example1" target="_blank">Publication Title 1</a> - Journal Name, Year</li>
-                <li><a href="https://doi.org/example2" target="_blank">Publication Title 2</a> - Journal Name, Year</li>
-                <li><a href="https://doi.org/example3" target="_blank">Publication Title 3</a> - Journal Name, Year</li>
-            </ul>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Applied Science Projects</h2>
+        <div class="project">
+            <h3>Real-Time Flash Flood Forecasting</h3>
+            <p>Designed AI-driven flash flood models integrating satellite precipitation data and machine learning to enhance early warning systems.</p>
+        </div>
+        <div class="project">
+            <h3>Hydrological Data Integration</h3>
+            <p>Integrated GOES-16 satellite data with hydrological models to reduce latency and improve river flow predictions.</p>
+        </div>
+    </section>
 
-        <section id="cv">
-            <h2>CV</h2>
-            <p>You can download my CV using the link below:</p>
-            <a href="cv/Paul_Munoz_Pauta_CV.pdf" download>Download My CV</a>
-        </section>
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <h2>Publications</h2>
+        <ul>
+            <li><a href="https://doi.org/example1" target="_blank">Title of Publication 1</a> - Journal Name, Year</li>
+            <li><a href="https://doi.org/example2" target="_blank">Title of Publication 2</a> - Journal Name, Year</li>
+            <li><a href="https://doi.org/example3" target="_blank">Title of Publication 3</a> - Journal Name, Year</li>
+        </ul>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or follow me on GitHub.</p>
-            <ul>
-                <li>Email: <a href="mailto:paulmunoz@example.com">paulmunoz@example.com</a></li>
-                <li>GitHub: <a href="https://github.com/paulmunozpauta" target="_blank">github.com/paulmunozpauta</a></li>
-            </ul>
-        </section>
-    </main>
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <h2>My CV</h2>
+        <p>Download my latest CV below:</p>
+        <a href="cv/Paul_Munoz_Pauta_CV.pdf" download class="btn">Download CV</a>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:paulmunoz@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <p>Or connect with me:</p>
+        <ul>
+            <li>Email: <a href="mailto:paulmunoz@example.com">paulmunoz@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/paulmunozpauta" target="_blank">github.com/paulmunozpauta</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Paul Muñoz Pauta</p>
+        <p>&copy; 2024 Paul Muñoz Pauta. All rights reserved.</p>
     </footer>
 </body>
 </html>
