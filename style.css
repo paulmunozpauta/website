@@ -9,7 +9,7 @@ body {
 /* Header Section */
 header {
     text-align: center;
-    background-color: #0073e6;
+    background-color: #333;
     color: white;
     padding: 20px 0;
 }
@@ -156,7 +156,7 @@ main ul {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #0073e6;
+    background: #333;
     color: white;
     margin-top: 20px;
 }
