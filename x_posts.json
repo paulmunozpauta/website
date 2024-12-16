@@ -1,16 +1,3 @@
-import requests
-import json
-
-BEARER_TOKEN = "888471305712021508-VdhfWi0zOPVgaCwBXTIAlowexS9aHrm
-"
-USERNAME = "paulmunozpauta"
-
-url = f"https://api.twitter.com/2/tweets/search/recent?query=from:{USERNAME}&max_results=5"
-headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
-
-response = requests.get(url, headers=headers)
-tweets = response.json()
-
-# Save tweets as JSON
-with open('x_posts.json', 'w') as file:
-    json.dump(tweets, file, indent=4)
+{
+    "data": []
+}
