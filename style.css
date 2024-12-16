@@ -41,7 +41,7 @@ header p {
 }
 
 .profile-pic {
-    width: 200px; /* Adjust size as needed */
+    width: 300px; /* Adjust size as needed */
     height: auto;
     border-radius: 50%; /* Circular image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for visual effect */
