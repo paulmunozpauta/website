@@ -204,14 +204,16 @@ a:hover {
 .btn {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #333; /* Dark Gray */
+    color: #fff; /* White text */
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    text-align: center;
+    margin: 20px auto; /* Centers the button horizontally */
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #005bb5;
+    background-color: #555; /* Slightly lighter gray on hover */
 }
+
