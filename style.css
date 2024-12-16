@@ -82,42 +82,21 @@ footer {
     color: white;
     margin-top: 20px;
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    font-size: 0.9em;
+#publications ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+#publications li {
+    margin-bottom: 15px; /* Adds space between items */
+    line-height: 1.5;    /* Improves readability */
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #0073e6;
-    color: white;
-    text-transform: uppercase;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-a {
+#publications a {
     color: #0073e6;
     text-decoration: none;
 }
 
-a:hover {
+#publications a:hover {
     text-decoration: underline;
 }
