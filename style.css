@@ -25,7 +25,7 @@ header p {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 410px; /* Adjust height for your hero section */
+    height: 400px; /* Adjust height for your hero section */
     background: url('images/background.jpg') no-repeat center center / cover;
     display: flex;
     justify-content: center;
@@ -33,6 +33,16 @@ header p {
     text-align: center;
 }
 
+/* Header section styling for all pages */
+.hero {
+    position: relative;
+    height: 200px; /* Adjust the height for the thin layout */
+    background: url('images/background.jpg') no-repeat center center / cover; /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 
 .hero h1 {
     margin: 0;
