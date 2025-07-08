@@ -212,7 +212,50 @@ a:hover {
     line-height: 1.6; /* Improves readability */
 }
 
-.education-list strong {
+.education-list strong {<!-- Content -->
+<main>
+    <section id="projects" class="section">
+        <ul class="projects-list">
+
+            <li class="project-item">
+                <img src="images/erasmus-logo.png" alt="Erasmus+" class="project-logo">
+                <div>
+                    <strong>ERASMUS+ Cooperation partnerships in higher education: Nature-Based Solutions for Water Innovation, Sustainability, and Ecosystems</strong><br>
+                    <em>Belgium, Germany, Slovenia. 2025—2028</em><br>
+                    NBsWISE enhances Nature-Based Solutions for hydroclimatic risk management through education, research, digital tools, and stakeholder engagement. It integrates IoT sensors, AI models, and GIS tools to improve NbS monitoring. The project trains students, researchers, and policymakers, engages citizens in NbS monitoring, and fosters policy integration. Expected outcomes include digital learning resources, real-world case studies, and high-level stakeholder events.
+                </div>
+            </li>
+
+            <li class="project-item">
+                <img src="images/globalminds-logo.png" alt="Global Minds" class="project-logo">
+                <div>
+                    <strong>Global Minds: Building Resilient Water Futures in the Global South through Digital Tools and Citizen Engagement (DIGIWATER)</strong><br>
+                    <em>Cuba. 2025—2026</em><br>
+                    DIGIWATER is a strategic initiative led by the Vrije Universiteit Brussel to catalyse long-term academic and institutional change in the Global South by strengthening collaboration with partners from Ecuador, Peru, Bolivia, Cuba and South Africa in the field of water resilience. The long-term vision is to create an open, inclusive, and well-coordinated ecosystem where universities across Latin America, Africa, and Europe co-develop knowledge, apply digital tools, and engage in sustained collaboration on research and training for sustainable water governance.
+                </div>
+            </li>
+
+            <li class="project-item">
+                <img src="images/vliruos-logo.png" alt="VLIR-UOS" class="project-logo">
+                <div>
+                    <strong>VLIR-UOS Short Initiative: Empowering communities for resilient water management: A collaborative approach to hydroclimatic challenges in the Andes</strong><br>
+                    <em>Belgium & Ecuador. 2025—2027</em><br>
+                    UNESCO CRIDA application in urban and rural settings.
+                </div>
+            </li>
+
+            <li class="project-item">
+                <img src="images/ai-flood-logo.png" alt="AI Flood Forecasting" class="project-logo">
+                <div>
+                    <strong>Data fusion of near-real-time satellite products for improving runoff forecasting</strong><br>
+                    <em>Ecuador. 2021—2024</em><br>
+                    Integration of satellite precipitation and AI models for operational flood forecasting.
+                </div>
+            </li>
+
+        </ul>
+    </section>
+</main>
     font-size: 1.1em; /* Slightly larger font for dates */
     color: #333; /* Dark gray for emphasis */
 }
@@ -221,4 +264,18 @@ a:hover {
     color: #555; /* Slightly lighter gray for university names */
     display: block; /* Moves university names to a new line */
     font-style: italic;
+}
+
+.project-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.project-logo {
+    width: 48px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 5px;
 }
