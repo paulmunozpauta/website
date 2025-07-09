@@ -41,7 +41,7 @@ header p {
 }
 .hero-with-nav {
     position: relative;
-    height: 300px; /* ↓ Reduced from 450px */
+    height: 50px; 
     background-color: black;
     overflow: hidden;
     display: flex;
