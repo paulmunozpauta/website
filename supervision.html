@@ -7,22 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navigation will be inserted here -->
+    <div id="nav-placeholder"></div>
+
     <!-- Hero Section -->
     <header class="hero">
         <h1>Supervision</h1>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="supervision.html">Supervision</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
 
     <main>
     
@@ -64,9 +58,22 @@
         </section>
     </main>
     
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Paul Muñoz Pauta. All rights reserved.</p>
-    </footer>    
+    <!-- Footer will be inserted here -->
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+        fetch('components.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = 
+                    new DOMParser().parseFromString(data, "text/html")
+                    .getElementById("shared-nav").innerHTML;
+
+                document.getElementById("footer-placeholder").innerHTML = 
+                    new DOMParser().parseFromString(data, "text/html")
+                    .getElementById("shared-footer").innerHTML;
+            });
+    </script>
 </body>
 </html>
