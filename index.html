@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Navigation will be inserted here -->
+<div id="nav-placeholder"></div>
+
 <!-- Hero Section -->
 <header class="hero">
     <div class="hero-content">
@@ -163,10 +166,22 @@
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Paul Muñoz Pauta. All rights reserved.</p>
-    </footer>
+    <!-- Footer will be inserted here -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('components.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = 
+                    new DOMParser().parseFromString(data, "text/html")
+                    .getElementById("shared-nav").innerHTML;
+
+                document.getElementById("footer-placeholder").innerHTML = 
+                    new DOMParser().parseFromString(data, "text/html")
+                    .getElementById("shared-footer").innerHTML;
+            });
+    </script>
 
     <!-- JavaScript to Load X Posts -->
     <script>
