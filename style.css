@@ -345,3 +345,24 @@ a:hover {
     color: #555;
     line-height: 1.6;
 }
+.media-item img {
+    width: 100%;
+    max-width: 220px; /* Slightly larger but still tidy */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 2 per row on desktop */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 15px;
+}
