@@ -308,3 +308,40 @@ a:hover {
   padding-bottom: 0 !important;
 }
 
+/* Blog Section */
+#blog {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-item {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog-item h3 {
+    color: #0073e6;
+    margin-bottom: 8px;
+}
+
+.blog-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}

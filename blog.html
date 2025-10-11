@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Blog</h1>
+    </header>
+
+    <!-- Blog Content -->
+<!-- Blog Content -->
+<main>
+    <section id="blog" class="section">
+        <div class="blog-container">
+
+            <!-- Blog Post 1 -->
+            <div class="blog-item">
+                <img src="images/pictures/2024_HYDR.jpg" alt="New Year gathering at HYDR" class="blog-img">
+                <h3>January 2025</h3>
+                <p>
+                    Starting the year with my colleagues from the Department of Water and Climate (HYDR) at VUB. The department has grown exponentially (60+ people by then). We had delicious Italian food. 
+                </p>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-item">
+                <img src="images/pictures/2024_PROCLIAS.JPG" alt="PROCLIAS workshop" class="blog-img">
+                <h3>November 2024</h3>
+                <p>
+                    Attending the PROCLIAS workshop — connecting climate impact research communities to advance 
+                    cross-sectoral analysis and collaborative science. The challenge remains how to communicate 
+                    complex science effectively, as uncertainties often become the biggest “monster” in our stories.
+                </p>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-item">
+                <img src="images/pictures/2025_EGU.JPG" alt="EGU 2025" class="blog-img">
+                <h3>April 2025</h3>
+                <p>
+                    During the EGU General Assembly 2025. In the picture is Ann, head of HYDR at VUB. She was also part of my MSc IUPWARE defense jury years ago. The world feels small sometimes! 
+                    In the photo also, there is Albert, another IUPWARE alumnus.
+                </p>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('components.html')
+            .then(res => res.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const html = parser.parseFromString(data, "text/html");
+                document.getElementById("nav-placeholder").innerHTML = html.getElementById("shared-nav").innerHTML;
+                document.getElementById("footer-placeholder").innerHTML = html.getElementById("shared-footer").innerHTML;
+            });
+    </script>
+</body>
+</html>
