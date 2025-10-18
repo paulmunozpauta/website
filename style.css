@@ -366,3 +366,24 @@ a:hover {
     justify-items: center;
     margin-top: 15px;
 }
+
+/* Ensure all text across publication sections is justified */
+main, 
+main section,
+main ul, 
+main ol, 
+main li, 
+main p {
+  text-align: justify;
+}
+
+/* Optional: slightly reduce line spacing for compactness */
+main {
+  line-height: 1.5;
+}
+
+/* Improve readability for long references */
+main li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
