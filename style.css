@@ -241,3 +241,149 @@ a:hover {
     height: auto;
     flex-shrink: 0;
 }
+
+/* Match ORCID section style to peer-reviewed list */
+#orcid-publications {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#orcid-publications .section-title {
+    color: #0073e6;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#orcid-publications .subsection-title {
+    font-size: 1.4em;
+    color: #0073e6;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#orcid-pubs ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+#orcid-pubs li {
+    margin-bottom: 10px;
+}
+
+#orcid-pubs a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+#orcid-pubs a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+/* Research Metrics Section */
+.stats-box {
+    background: #f7f9fb;
+    border: 1px solid #dce3ec;
+    border-radius: 10px;
+    padding: 20px 25px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+/* Reduce vertical gaps between top sections */
+#about,
+#positions,
+#education {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Blog Section */
+#blog {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-item {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog-item h3 {
+    color: #0073e6;
+    margin-bottom: 8px;
+}
+
+.blog-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+.media-item img {
+    width: 100%;
+    max-width: 220px; /* Slightly larger but still tidy */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 2 per row on desktop */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 15px;
+}
+
+/* Ensure all text across publication sections is justified */
+main, 
+main section,
+main ul, 
+main ol, 
+main li, 
+main p {
+  text-align: justify;
+}
+
+/* Optional: slightly reduce line spacing for compactness */
+main {
+  line-height: 1.5;
+}
+
+/* Improve readability for long references */
+main li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}

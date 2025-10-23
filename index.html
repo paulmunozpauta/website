@@ -43,21 +43,33 @@
     </div>
 </header>
 
+<!-- About Section -->
+<section id="education" class="section" style="margin-top: 10px; margin-bottom: 10px; text-align: justify;">  <p>
+    🌍💧 I’m a researcher in water and climate science working on the 
+    <strong>integration of process-based knowledge</strong> into 
+    <strong>artificial intelligence</strong> and <strong>remote sensing</strong> 
+    to enhance the understanding and prediction of water and climate extremes.
+  </p>
 
+  <p>
+    🎓 My teaching and supervision approach aims to inspire <strong>critical thinking</strong> 
+    and promote <strong>out-of-the-box problem solving</strong>. 
+    I combine theoretical perspectives with practical experimentation—often by exploring and playing with data—to build intuition and creativity. 
+    I use interactive and open-source tools such as Jupyter Notebooks and Google Colab 
+    (especially when local installation is a challenge), and I always prioritize <strong>hands-on learning</strong> 
+    to connect concepts with real-world applications.
+  </p>
 
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <p>
-            👋! I’m a hydrology and AI researcher developing tools and models for 
-            <strong>hydrological forecasting</strong> and <strong>climate applications</strong>. 
-            My work bridges advanced artificial intelligence,  remote sensing, and applied science 
-            to solve real-world water challenges.
-        </p>
-
+  <p>
+    🔁 I also emphasize <strong>reproducibility</strong> and commitment to the 
+    <strong>FAIR principles</strong> (Findable, Accessible, Interoperable, and Reusable) in both teaching and research. 
+    Whenever possible, I share materials, data, and code openly through GitHub, 
+    encouraging to reproduce, reuse, and extend scientific work transparently.
+  </p>
+</section>
 <!-- Current and Past Positions Section -->
-<section id="positions" class="section">
-    <h2 class="section-title">Current and Past Positions</h2>
+<section id="positions" class="section" style="margin-top: 10px; margin-bottom: 10px;">
+    <h2 class="section-title">Current and past positions</h2>
     <ul class="positions-list">
         <li>
             <strong>May 2024 - Present</strong>: Postdoctoral researcher at the 
@@ -76,40 +88,25 @@
     </ul>
 </section>
 <!-- Education Section -->
-<section id="education" class="section">
+<section id="about" class="section" style="margin-bottom: 0;">
     <h2 class="section-title">Education</h2>
     <ul class="education-list">
         <li>
             <strong> 2019 –  2023</strong>: Ph.D. in Water Resources <br>
-            <em>University of Cuenca, Cuenca, Ecuador</em><br>
-            Thesis: Towards the improvement of machine learning peak runoff forecasting by exploiting ground- and satellite-based precipitation data: A feature engineering approach.
+            <em>University of Cuenca, Cuenca, Ecuador. Thesis: Towards the improvement of machine learning peak runoff forecasting by exploiting ground- and satellite-based precipitation data: A feature engineering approach.</em>
         </li>
         <li>
             <strong> 2016 –  2018</strong>: MSc. in Water Resources Engineering <br>
-            <em>KU Leuven, Leuven, Belgium</em><br>
-            Thesis: Flash-flood forecasting in an Andean mountain catchment—development of a step-wise methodology based on the random forest algorithm.
+            <em>Katholieke Universiteit Leuven and Vrije Universiteit Brussel, Belgium. Thesis: Flash-flood forecasting in an Andean mountain catchment—development of a step-wise methodology based on the random forest algorithm.</em>
         </li>
         <li>
             <strong> 2009 –  2015</strong>: Bachelor’s in Civil Engineering <br>
-            <em>University of Cuenca, Cuenca, Ecuador</em><br>
-            Thesis: Effect of the resolution of tipping-bucket rain gauge and calculation method on rainfall intensities in an Andean mountain gradient.
+            <em>University of Cuenca, Cuenca, Ecuador. Thesis: Effect of the resolution of tipping-bucket rain gauge and calculation method on rainfall intensities in an Andean mountain gradient.</em>
         </li>
     </ul>
-</section>
-
-
-
-    <!-- X (Twitter) Posts -->
-    <div id="x-posts">
-        <h3>X (Twitter) Posts</h3>
-        <ul id="x-posts-list">
-            <!-- Tweets will be dynamically inserted here -->
-        </ul>
-    </div>
-</section>
 
 <!-- CV Section -->
-<section id="cv" class="section">
+<section id="education" class="section" style="margin-top: 10px; margin-bottom: 10px;">
     <h2 class="section-title">Download my CV</h2>
     <div class="center-link">
         <a href="CV/CV_PMunoz_Oct24.pdf" download>Last Updated: October 2024</a>
@@ -133,20 +130,5 @@
             });
     </script>
 
-    <!-- JavaScript to Load X Posts -->
-    <script>
-        // Fetch and display X posts
-        fetch("x_posts.json")
-            .then(response => response.json())
-            .then(data => {
-                const postsList = document.getElementById("x-posts-list");
-                data.data.forEach(post => {
-                    const listItem = document.createElement("li");
-                    listItem.textContent = post.text;
-                    postsList.appendChild(listItem);
-                });
-            })
-            .catch(error => console.error("Error fetching X posts:", error));
-    </script>
 </body>
 </html>

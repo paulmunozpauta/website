@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outreach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation will be inserted here -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Outreach</h1>
+    </header>
+
+
+<!-- Content -->
+<main>
+
+<!-- Outreach Section -->
+<section id="outreach" class="section" style="margin-top: 10px; margin-bottom: 10px;">
+  <h2 class="subsection-title">Scientific Engagement</h2>
+  <ul class="outreach-list">
+
+    <!-- EGU 2026 -->
+    <li>
+      <strong>Session co-convener:</strong> 
+      <em>“HS3 – EDI: Innovative solutions for resilient water, health, and environmental systems under climate change.”</em>  
+      <a href="https://meetingorganizer.copernicus.org/EGU26/session/56816" target="_blank">
+        European Geosciences Union (EGU) General Assembly 2026
+      </a>.  
+      Conveners: Gerald Corzo, Jeewanthi Sirisena, Paul Muñoz.  
+      <br>
+      <small>
+        This session highlights innovative and interdisciplinary approaches that strengthen resilience in water, health, and environmental systems. 
+        It emphasizes integration of hydroinformatics, AI/ML, remote sensing, ICTs, and socio-economic perspectives to enhance monitoring, forecasting, and decision-making under climate change.
+      </small>
+    </li>
+    <!-- EGU 2025 -->
+    <li>
+    <strong>Session co-convener:</strong> 
+    <em>“HS3.5 – Innovative Approaches in Hydroinformatics and Stakeholder Engagement for Managing Hydrological Extremes in Diverse Basins.”</em>  
+    <a href="https://meetingorganizer.copernicus.org/EGU25/session/52690" target="_blank">
+        European Geosciences Union (EGU) General Assembly 2025
+    </a>.  
+    Conveners: Gerald Corzo, Wenfeng Liu, Jeewanthi Sirisena, Carole Dalin, Yunqing Xuan, Paul Muñoz.  
+    <br>
+    <small>
+        This session explores the integration of stakeholder engagement and advanced hydroinformatics techniques—such as remote sensing, machine learning, AI, and numerical modeling—to address challenges in hydrological sciences and natural hazards. 
+        Emphasizing both theoretical advancements and practical applications, it attracts contributions from diverse regions and hydrological contexts, particularly those involving the co-development of research with decision-makers.
+    </small>
+    </li>
+
+    <!-- EGU 2024 -->
+    <li>
+    <strong>Session co-convener:</strong> 
+    <em>“HS3.2 – Integrated Approaches for Resilient Water Systems: Spatio-Temporal Analysis and Uncertainty Management.”</em>  
+    <a href="https://meetingorganizer.copernicus.org/EGU24/session/48092" target="_blank">
+        European Geosciences Union (EGU) General Assembly 2024
+    </a>.  
+    Conveners: Yunqing Xuan, Gerald A. Corzo P, Vitali Diaz, Peter van Thienen, Georgia Papacharalampous, Paul Muñoz.  
+    <br>
+    <small>
+    The session addresses the challenges of managing water systems across spatial and temporal scales, focusing on hydrological extremes and uncertainty in planning and decision-making. 
+    It integrates spatio-temporal analysis and uncertainty management in water networks, highlighting the use of remote sensing, statistical methods, and machine learning to improve prediction, risk assessment, and resilience in both urban and rural contexts.
+    </small>
+    </li>
+
+ 
+  </ul>
+
+<h2 class="subsection-title">Media and public communication</h2>
+
+<div class="media-grid">
+
+  <div class="media-item">
+    <img src="images/pictures/outreach/mercurio.png" alt="Newspaper Article">
+    <p class="media-caption"></p>
+  </div>
+
+  <div class="media-item">
+    <img src="images/pictures/outreach/unsiontv.png" alt="TV Interview">
+    <p class="media-caption"></p>
+  </div>
+
+  <!-- Add more items as needed -->
+</div>
+
+
+</section>
+
+
+
+</main>
+    <!-- Footer will be inserted here -->
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+        fetch('components.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = 
+                    new DOMParser().parseFromString(data, "text/html")
+                    .getElementById("shared-nav").innerHTML;
+
+                document.getElementById("footer-placeholder").innerHTML = 
+                    new DOMParser().parseFromString(data, "text/html")
+                    .getElementById("shared-footer").innerHTML;
+            });
+    </script>
+</body>
+</html>
