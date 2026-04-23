@@ -1,243 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications · Paul Muñoz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation will be inserted here -->
-    <div id="nav-placeholder"></div>
 
+<nav>
+  <a class="nav-brand" href="index.html">Paul Muñoz</a>
+  <ul class="nav-links">
+    <li><a href="projects.html">Research</a></li>
+    <li><a href="publications.html" class="active">Publications</a></li>
+    <li><a href="courses.html">Teaching</a></li>
+    <li><a href="supervision.html">Supervision</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Publications</h1>
-    </header>
+<div class="page-hero">
+  <p class="hero-label">Academic Output</p>
+  <h1>Publications</h1>
+  <div class="hero-stats">
+    <div class="stat"><strong>18</strong>Peer-reviewed articles</div>
+    <div class="stat"><strong>2</strong>Book chapters</div>
+    <div class="stat"><strong>2016–2026</strong>Publication span</div>
+  </div>
+</div>
 
+<main>
 
-    <main>
+  <div class="orcid-note">
+    <span class="orcid-badge">ORCID</span>
+    <p>Full record at <a href="https://orcid.org/0000-0002-8000-8840" target="_blank">orcid.org/0000-0002-8000-8840</a></p>
+  </div>
 
-        <!-- ORCID Publications Section -->
-        <section id="orcid-publications" class="section">
-            <h2 class="section-title">Latest from ORCID</h2>
-            <div id="orcid-pubs">Loading recent works...</div>
-        </section>
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterPubs('all',this)">All</button>
+    <button class="filter-btn" onclick="filterPubs('journal',this)">Journal articles</button>
+    <button class="filter-btn" onclick="filterPubs('chapter',this)">Book chapters</button>
+    <button class="filter-btn" onclick="filterPubs('2025+',this)">2025–2026</button>
+  </div>
 
+  <div id="pub-list">
 
+    <div class="year-group" data-year="2026">
+      <div class="year-label">2026</div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#18</span>
+        <div class="card-tags"><span class="tag tag-nature">Nature Water</span><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1038/s44221-026-00617-w" target="_blank">Variable renewables fortify Ecuador's power system against recurrences of drought-driven energy crises</a></div>
+        <div class="pub-authors">Sterl, S., Pineda, L.E., Mast, T., Rodríguez, Y., <strong>Muñoz, P.</strong> &amp; Thiery, W.</div>
+        <div class="pub-journal">Nature Water, 2026</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#17</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1016/j.ejrh.2026.103163" target="_blank">Evaluating the three-cornered hat method for hourly satellite precipitation fusion in hydrological forecasting</a></div>
+        <div class="pub-authors">Luna Abril, P., <strong>Muñoz, P.</strong>, Samaniego, E., Muñoz, D.F., Merizalde, M., Lillo-Saavedra, M. &amp; Célleri, R.</div>
+        <div class="pub-journal">Journal of Hydrology: Regional Studies, 64(4), 103163</div>
+      </div>
+    </div>
 
+    <div class="year-group" data-year="2025">
+      <div class="year-label">2025</div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#16</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://ascelibrary.org/doi/abs/10.1061/JHYEFF.HEENG-6543" target="_blank">Reducing Latency in Satellite-Based Precipitation Estimates Using GOES-16 and Machine Learning</a></div>
+        <div class="pub-authors">Muñoz, J., <strong>Muñoz, P.</strong>, Muñoz, D. F., &amp; Célleri, R.</div>
+        <div class="pub-journal">Journal of Hydrologic Engineering, 30(6), 04025036</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#15</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1016/j.envsoft.2025.106457" target="_blank">Advancing timely satellite precipitation for IMERG-ER using GOES-16 data and a U-Net convolutional neural network modelling approach</a></div>
+        <div class="pub-authors">Vélez-Hernández, M., <strong>Muñoz, P.</strong>, Samaniego, E., Merizalde, M. J., &amp; Célleri, R.</div>
+        <div class="pub-journal">Environmental Modelling &amp; Software, 106457</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#14</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1029/2024WR039054" target="_blank">Predicting the Evolution of Extreme Water Levels With Long Short-Term Memory Station-Based Approximated Models and Transfer Learning Techniques</a></div>
+        <div class="pub-authors">Daramola, S., Muñoz, D. F., <strong>Muñoz, P.</strong>, Saksena, S., &amp; Irish, J. L.</div>
+        <div class="pub-journal">Water Resources Research, 61, e2024WR039054</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#13</span>
+        <div class="card-tags"><span class="tag tag-nature">Nature Communications</span><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://www.nature.com/articles/s41467-025-56356-1" target="_blank">Impacts of irrigation expansion on moist-heat stress based on IRRMIP results</a></div>
+        <div class="pub-authors">Yao, Y., Ducharne, A., Cook, B. I., ..., <strong>Muñoz, P.</strong>, ... &amp; Thiery, W.</div>
+        <div class="pub-journal">Nature Communications, 16(1), 1045</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#12</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://link.springer.com/article/10.1007/s00703-024-01053-9" target="_blank">Precipitation forecasting using random forest over an ecuadorian andes basin</a></div>
+        <div class="pub-authors">Montenegro, M., Célleri, R., Orellana-Alvear, J., <strong>Muñoz, P.</strong>, &amp; Córdova, M.</div>
+        <div class="pub-journal">Meteorology and Atmospheric Physics, 137(1), 1–12</div>
+      </div>
+    </div>
 
-        <h2> Full list of peer-reviewed articles</h2>
-        <ul>
-            <ol reversed>
+    <div class="year-group" data-year="2024">
+      <div class="year-label">2024</div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#11</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1007/s11069-024-06939-w" target="_blank">Enhancing runoff forecasting through the integration of satellite precipitation data and hydrological knowledge into machine learning models</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Muñoz, D. F., Orellana-Alvear, J., &amp; Célleri, R.</div>
+        <div class="pub-journal">Natural Hazards, 1–23</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#10</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3390/w16070968" target="_blank">Enhancing Peak Runoff Forecasting through Feature Engineering Applied to X-Band Radar Data</a></div>
+        <div class="pub-authors">Álvarez-Estrella, J., <strong>Muñoz, P.</strong>, Bendix, J., Contreras, P., &amp; Célleri, R.</div>
+        <div class="pub-journal">Water, 16(7), 968</div>
+      </div>
+    </div>
 
-                <li>
-                    Sterl, S., Pineda, L.E., Mast, T., Rodríguez, Y., Muñoz, P. & Thiery, W. (2026). 
-                    <a href="https://doi.org/10.1038/s44221-026-00617-w" target="_blank">
-                        Variable renewables fortify Ecuador’s power system against recurrences of drought-driven energy crises.
-                    </a> 
-                    <i>Nature Water</i>.
-                </li>
+    <div class="year-group" data-year="2023">
+      <div class="year-label">2023</div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#9</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1016/j.envsoft.2022.105582" target="_blank">Near-real-time satellite precipitation data ingestion into peak runoff forecasting models</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Corzo, G., Solomatine, D., Feyen, J., &amp; Célleri, R.</div>
+        <div class="pub-journal">Environmental Modelling &amp; Software, 160, 105582</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#8</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3389/frwa.2023.1233899" target="_blank">Integrating geographic data and the SCS-CN method with LSTM networks for enhanced runoff forecasting</a></div>
+        <div class="pub-authors">Merizalde, M. J., <strong>Muñoz, P.</strong>, Muñoz, D. F., Corzo, G., Samaniego, E., &amp; Célleri, R.</div>
+        <div class="pub-journal">Frontiers in Water</div>
+      </div>
+      <div class="pub-card" data-type="chapter">
+        <span class="pub-num">BC·2</span>
+        <div class="card-tags"><span class="tag tag-agu">AGU Books</span><span class="tag tag-chapter">Book chapter</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1002/9781119639268.ch6" target="_blank">Use of Near-Real-Time Satellite Precipitation Data and Machine Learning to Improve Extreme Runoff Modeling</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Corzo, G., Solomatine, D., Feyen, J., &amp; Célleri, R.</div>
+        <div class="pub-journal">AGU Books: Hydroinformatics</div>
+      </div>
+    </div>
 
+    <div class="year-group" data-year="pre2023">
+      <div class="year-label">2016 – 2021</div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#7</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3390/hydrology8040183" target="_blank">Flood Early Warning Systems Using Machine Learning Techniques: The Case of the Tomebamba Catchment</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Orellana-Alvear, J., Bendix, J., Feyen, J., &amp; Célleri, R.</div>
+        <div class="pub-journal">Hydrology, 8(4), 183 · 2021</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#6</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9312403" target="_blank">Fusing multi-source data to estimate the effects of urbanization, sea level rise, and hurricane impacts on long-term wetland change dynamics</a></div>
+        <div class="pub-authors">Muñoz, D. F., <strong>Muñoz, P.</strong>, Alipour, A., Moftakhari, H., Moradkhani, H., &amp; Mortazavi, B.</div>
+        <div class="pub-journal">IEEE Journal of Selected Topics in Applied Earth Observations · 2021</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#5</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3390/atmos12020238" target="_blank">Influence of Random Forest Hyperparameterization on Short-Term Runoff Forecasting in an Andean Mountain Catchment</a></div>
+        <div class="pub-authors">Contreras, P., Orellana-Alvear, J., <strong>Muñoz, P.</strong>, Bendix, J., &amp; Célleri, R.</div>
+        <div class="pub-journal">Atmosphere, 12(2), 238 · 2021</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#4</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1016/j.scitotenv.2021.146927" target="_blank">From local to regional compound flood mapping with deep learning and data fusion techniques</a></div>
+        <div class="pub-authors">Muñoz, D. F., <strong>Muñoz, P.</strong>, Moftakhari, H., &amp; Moradkhani, H.</div>
+        <div class="pub-journal">Science of the Total Environment, 782, 146927 · 2021</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#3</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3390/rs12121986" target="_blank">Assessment of Native Radar Reflectivity and Radar Rainfall Estimates for Discharge Forecasting in Mountain Catchments with a Random Forest Model</a></div>
+        <div class="pub-authors">Orellana-Alvear, J., Célleri, R., Rollenbeck, R., <strong>Muñoz, P.</strong>, Contreras, P., &amp; Bendix, J.</div>
+        <div class="pub-journal">Remote Sensing, 12(12), 1986 · 2020</div>
+      </div>
+      <div class="pub-card" data-type="chapter">
+        <span class="pub-num">BC·1</span>
+        <div class="card-tags"><span class="tag tag-chapter">Book chapter</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.1007/978-3-030-55563-4_2" target="_blank">Application of a Machine Learning Technique for Developing Short-Term Flood and Drought Forecasting Models in Tropical Mountainous Catchments</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Orellana-Alvear, J., &amp; Célleri, R.</div>
+        <div class="pub-journal">Integrated Research on Disaster Risks, pp. 11–35. Springer, Cham · 2021</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#2</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3390/w10111519" target="_blank">Flash-Flood Forecasting in an Andean Mountain Catchment — Development of a Step-Wise Methodology Based on the Random Forest Algorithm</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Orellana-Alvear, J., Willems, P., &amp; Célleri, R.</div>
+        <div class="pub-journal">Water, 10, 1519 · 2018</div>
+      </div>
+      <div class="pub-card" data-type="journal">
+        <span class="pub-num">#1</span>
+        <div class="card-tags"><span class="tag tag-journal">Journal article</span></div>
+        <div class="pub-title"><a href="https://doi.org/10.3390/w8110534" target="_blank">Effect of the Resolution of Tipping-Bucket Rain Gauge and Calculation Method on Rainfall Intensities in an Andean Mountain Gradient</a></div>
+        <div class="pub-authors"><strong>Muñoz, P.</strong>, Célleri, R., &amp; Feyen, J.</div>
+        <div class="pub-journal">Water, 8, 534 · 2016</div>
+      </div>
+    </div>
 
-                <li>
-                    Luna Abril, P., Muñoz, P., Samaniego, E., Muñoz, D.F., Merizalde, M., Lillo-Saavedra, M. & Célleri, R. (2026). 
-                    <a href="https://doi.org/10.1016/j.ejrh.2026.103163" target="_blank">
-                        Evaluating the three-cornered hat method for hourly satellite precipitation fusion in hydrological forecasting: A case study in a Tropical Andean Basin.
-                    </a> 
-                    <i>Journal of Hydrology: Regional Studies, 64(4), 103163</i>.
-                </li>
-                
-                <li>
-                    Muñoz, J., Muñoz, P., Muñoz, D. F., & Célleri, R. (2025). 
-                    <a href="https://ascelibrary.org/doi/abs/10.1061/JHYEFF.HEENG-6543" target="_blank">
-                        Reducing Latency in Satellite-Based Precipitation Estimates Using GOES-16 and Machine Learning.
-                    </a> 
-                    <i>Journal of Hydrologic Engineering, 30(6), 04025036</i>.
-                </li>
+  </div><!-- end pub-list -->
+</main>
 
+<footer>© 2025 Paul Muñoz · <span>paulmunoz.com</span></footer>
 
-                <li>
-                    Vélez-Hernández, M., Muñoz, P., Samaniego, E., Merizalde, M. J., & Célleri, R. (2025). 
-                    <a href="https://doi.org/10.1016/j.envsoft.2025.106457" target="_blank">
-                         Advancing timely satellite precipitation for IMERG-ER using GOES-16 data and a U-Net convolutional neural network modelling approach.
-                    </a>. 
-                    <i>Environmental Modelling & Software, 106457</i>.
-                </li>   
-                                              
-               
-                <li>
-                    Daramola, S., Muñoz, D. F., Muñoz, P., Saksena, S., & Irish, J. L. (2025). 
-                    <a href="https://doi.org/10.1029/2024WR039054" target="_blank">
-                        Predicting the Evolution of Extreme Water Levels With Long Short-Term Memory Station-Based Approximated Models and Transfer Learning Techniques
-                    </a>. 
-                    <i>Water Resources Research, 61,e2024WR039054</i>.
-                </li>   
-                
-                
-                
-                <li>
-                    Yao, Y., Ducharne, A., Cook, B. I., ..., Muñoz, P.,... & Thiery, W. (2025). 
-                    <a href="https://www.nature.com/articles/s41467-025-56356-1" target="_blank">
-                        Impacts of irrigation expansion on moist-heat stress based on IRRMIP results
-                    </a>. 
-                    <i>Nature Communications, 16(1), 1045</i>.
-                </li>               
-               
-                <li>
-                    Montenegro, M., Célleri, R., Orellana-Alvear, J., Muñoz, P., & Córdova, M. (2025). 
-                    <a href="https://link.springer.com/article/10.1007/s00703-024-01053-9" target="_blank">
-                        Precipitation forecasting using random forest over an ecuadorian andes basin
-                    </a>. 
-                    <i>Meteorology and Atmospheric Physics, 137(1), 1-12</i>.
-                </li>               
-               
-               
-                <li>
-                    Muñoz, P., Muñoz, D. F., Orellana-Alvear, J., & Célleri, R. (2024). 
-                    <a href="https://doi.org/10.1007/s11069-024-06939-w" target="_blank">
-                        Enhancing runoff forecasting through the integration of satellite precipitation data and hydrological knowledge into machine learning models
-                    </a>. 
-                    <i>Natural Hazards, 1-23</i>.
-                </li>
-                <li>
-                    Álvarez-Estrella, J., Muñoz, P., Bendix, J., Contreras, P., & Célleri, R. (2024). 
-                    <a href="https://doi.org/10.3390/w16070968" target="_blank">
-                        Enhancing Peak Runoff Forecasting through Feature Engineering Applied to X-Band Radar Data
-                    </a>. 
-                    <i>Water, 16</i>(7), 968.
-                </li>
-                <li>
-                    Muñoz, P., Corzo, G., Solomatine, D., Feyen, J., & Célleri, R. (2023). 
-                    <a href="https://doi.org/10.1016/j.envsoft.2022.105582" target="_blank">
-                        Near-real-time satellite precipitation data ingestion into peak runoff forecasting models
-                    </a>. 
-                    <i>Environmental Modelling & Software, 160</i>, 105582.
-                </li>
+<script>
+function filterPubs(type, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.pub-card').forEach(card => {
+    if (type === 'all') { card.style.display = ''; return; }
+    if (type === '2025+') {
+      const yr = card.closest('.year-group')?.dataset.year;
+      card.style.display = (yr === '2025' || yr === '2026') ? '' : 'none';
+    } else {
+      card.style.display = card.dataset.type === type ? '' : 'none';
+    }
+  });
+  document.querySelectorAll('.year-group').forEach(g => {
+    const visible = [...g.querySelectorAll('.pub-card')].some(c => c.style.display !== 'none');
+    g.style.display = visible ? '' : 'none';
+  });
+}
+</script>
 
-                <li>
-                    Merizalde, M. J., Muñoz, P., Muñoz, D. F., Corzo, G., Samaniego, E., & Célleri, R. (2023). 
-                    <a href="https://doi.org/10.3389/frwa.2023.1233899" target="_blank">
-                        Integrating geographic data and the SCS-CN method with LSTM networks for enhanced runoff forecasting in a complex mountain basin
-                    </a>. 
-                    <i>Frontiers in Water</i>.
-                </li>
-                <li>
-                    Muñoz, P., Orellana-Alvear, J., Bendix, J., Feyen, J., & Célleri, R. (2021). 
-                    <a href="https://doi.org/10.3390/hydrology8040183" target="_blank">
-                        Flood Early Warning Systems Using Machine Learning Techniques: The Case of the Tomebamba Catchment in the Southern Andes of Ecuador
-                    </a>. 
-                    <i>Hydrology, 8</i>(4), 183.
-                </li>
-
-                <li>
-                    Muñoz, D. F., Muñoz, P., Alipour, A., Moftakhari, H., Moradkhani, H., & Mortazavi, B. (2021). 
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9312403" target="_blank">
-                        Fusing multi-source data to estimate the effects of urbanization, sea level rise, and hurricane impacts on long-term wetland change dynamics
-                    </a>. 
-                    <i>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</i>.
-                </li>
-                <li>
-                    Contreras, P., Orellana-Alvear, J., Muñoz, P., Bendix, J., & Célleri, R. (2021). 
-                    <a href="https://doi.org/10.3390/atmos12020238" target="_blank">
-                        Influence of Random Forest Hyperparameterization on Short-Term Runoff Forecasting in an Andean Mountain Catchment
-                    </a>. 
-                    <i>Atmosphere, 12</i>(2), 238.
-                </li>
-                <li>
-                    Muñoz, D. F., Muñoz, P., Moftakhari, H., & Moradkhani, H. (2021). 
-                    <a href="10.1109/JSTARS.2020.3048724" target="_blank">
-                        From local to regional compound flood mapping with deep learning and data fusion techniques
-                    </a>. 
-                    <i>Science of the Total Environment, 782</i>, 146927.
-                </li>
-                <li>
-                    Orellana-Alvear, J., Célleri, R., Rollenbeck, R., Muñoz, P., Contreras, P., & Bendix, J. (2020). 
-                    <a href="https://doi.org/10.3390/rs12121986" target="_blank">
-                        Assessment of Native Radar Reflectivity and Radar Rainfall Estimates for Discharge Forecasting in Mountain Catchments with a Random Forest Model
-                    </a>. 
-                    <i>Remote Sensing, 12</i>(12), 1986.
-                </li>
-                <li>
-                    Muñoz, P., Orellana-Alvear, J., Willems, P., & Célleri, R. (2018). 
-                    <a href="https://doi.org/10.3390/w10111519" target="_blank">
-                        Flash-Flood Forecasting in an Andean Mountain Catchment—Development of a Step-Wise Methodology Based on the Random Forest Algorithm
-                    </a>. 
-                    <i>Water, 10</i>, 1519.
-                </li>
-                <li>
-                    Muñoz, P., Célleri, R., & Feyen, J. (2016). 
-                    <a href="https://doi.org/10.3390/w8110534" target="_blank">
-                        Effect of the Resolution of Tipping-Bucket Rain Gauge and Calculation Method on Rainfall Intensities in an Andean Mountain Gradient
-                    </a>. 
-                    <i>Water, 8</i>, 534.
-                </li>
-            </ol>
-        </ul>
-        <h2> Full list of peer-reviewed book chapters</h2>
-        <ul>
-            <ol reversed>
-                <li>
-                    Muñoz, P., Corzo, G., Solomatine, D., Feyen, J., & Célleri, R. (2023). 
-                    <a href="https://doi.org/10.1002/9781119639268.ch6" target="_blank">
-                        Use of Near-Real-Time Satellite Precipitation Data and Machine Learning to Improve Extreme Runoff Modeling
-                    </a>. 
-                    <i>AGU Books: Hydroinformatics</i>.
-                </li>              
-               
-               
-                <li>
-                    Muñoz, P., Orellana-Alvear, J., & Célleri, R. (2021). 
-                    <a href="https://doi.org/10.1007/978-3-030-55563-4_2" target="_blank">
-                        Application of a Machine Learning Technique for Developing Short-Term Flood and Drought Forecasting Models in Tropical Mountainous Catchments
-                    </a>. 
-                    In <i>Integrated Research on Disaster Risks</i> (pp. 11-35). Springer, Cham.
-                </li>
-    </main>
-
-    <!-- Footer will be inserted here -->
-    <div id="footer-placeholder"></div>
-
-
-    <script>
-        fetch('components.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-nav").innerHTML;
-
-                document.getElementById("footer-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-footer").innerHTML;
-            });
-    </script>
-
-   <!-- ORCID fetch script -->
-    <script>
-        fetch("https://pub.orcid.org/v3.0/0000-0002-8000-8840/works", {
-            headers: { Accept: "application/json" }
-        })
-        .then(response => {
-            if (!response.ok) throw new Error("Failed to load ORCID data");
-            return response.json();
-        })
-        .then(data => {
-            const works = data.group.slice(0, 5);
-            const list = works.map(w => {
-                const work = w['work-summary'][0];
-                const title = work.title.title.value;
-                const year = work['publication-date']?.year?.value || '';
-                const url = work['external-ids']?.['external-id']?.[0]?.['external-id-url']?.value || null;
-                return `<li>${url ? `<a href="${url}" target="_blank">${title}</a>` : title}${year ? ` (${year})` : ''}</li>`;
-            }).join('');
-            document.getElementById("orcid-pubs").innerHTML = `<ul>${list}</ul>`;
-        })
-        .catch(error => {
-            console.error("Error fetching ORCID data:", error);
-            document.getElementById("orcid-pubs").textContent = "Unable to load publications.";
-        });
-    </script>
 </body>
 </html>
