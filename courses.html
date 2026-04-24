@@ -1,51 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching · Paul Muñoz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation will be inserted here -->
-    <div id="nav-placeholder"></div>
-    
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Courses</h1>
-    </header>
+
+<nav>
+  <a class="nav-brand" href="index.html">Paul Muñoz</a>
+  <ul class="nav-links">
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="courses.html" class="active">Teaching</a></li>
+    <li><a href="supervision.html">Supervision</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <p class="hero-label">Teaching</p>
+  <h1>Courses</h1>
+  <div class="hero-stats">
+    <div class="stat"><strong>UdeC</strong>Universidad de Concepción</div>
+    <div class="stat"><strong>Open</strong>Jupyter Notebooks</div>
+    <div class="stat"><strong>FAIR</strong>Open science principles</div>
+  </div>
+</div>
+
+<main>
+
+  <section>
+    <p class="section-label">Teaching philosophy</p>
+    <div class="card" style="border-left: 3px solid var(--accent);">
+      <div class="card-sub" style="font-size:0.88rem; line-height:1.7; color:var(--text);">
+        My teaching integrates open-source tools, real-world datasets, and hands-on coding from day one. All courses use Jupyter Notebooks and follow FAIR data principles — making science reproducible, accessible, and reusable. Students work with real precipitation, runoff, and climate datasets from the Andes and beyond.
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT COURSES -->
+  <section>
+    <p class="section-label">Current courses — Universidad de Concepción</p>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-ml">Hydrology</span>
+        <span class="tag tag-ongoing">Undergraduate</span>
+      </div>
+    </div>
 
 
+  </section>
 
-    <!-- Content -->
-    <main>
-        <section id="Courses" class="section">
-            <ul class="courses-list">
-                <li>Statistics for Hydrology.</li>
-                <li>Advanced Hydrometry.</li>
-                <li>Machine learning for hydrological and climatic modelling.
-                <li>Introduction to Data Science.</li>
-                <li>Introduction to Research Methodology.</li>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <!-- Footer will be inserted here -->
-    <div id="footer-placeholder"></div>
+  <!-- PAST / GUEST LECTURES -->
+  <section>
+    <p class="section-label">Guest lectures & short courses</p>
 
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-eu">VUB · Belgium</span>
+        <span class="tag tag-completed">2025</span>
+      </div>
+      <div class="card-title">Machine Learning Hydrological Modelling</div>
+       <div class="card-sub">IUPWARE alumni refresher course in Uganda, March 2025</div>
+        <span class="tag tag-ongoing">Refresher course</span>
 
-    <script>
-        fetch('components.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-nav").innerHTML;
+    </div>
 
-                document.getElementById("footer-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-footer").innerHTML;
-            });
-    </script>
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-rs">Universidad de Cuenca</span>
+        <span class="tag tag-completed">2023–2024</span>
+      </div>
+      <div class="card-title">Métodos estadísticos</div>
+        <span class="tag tag-ongoing">Graduate</span>
+    </div>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-rs">Universidad de Cuenca</span>
+        <span class="tag tag-completed">2023–2024</span>
+      </div>
+      <div class="card-title">Machine learning para modelación de caudales y clima</div>
+      <div class="card-sub"> .</div>
+        <span class="tag tag-ongoing">Graduate</span>
+
+    </div>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-rs">Universidad de Cuenca</span>
+        <span class="tag tag-completed">2023–2024</span>
+      </div>
+      <div class="card-title">Hidrometría Avanzada</div>
+      <div class="card-sub"> .</div>
+        <span class="tag tag-ongoing">Graduate</span>
+    </div>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-rs">Universidad de Cuenca</span>
+        <span class="tag tag-completed">2024</span>
+      </div>
+      <div class="card-title">Introducción a la Ciencia de Datos</div>
+      <div class="card-sub"> .</div>
+        <span class="tag tag-ongoing">Undergraduate</span>
+    </div>
+
+  </section>
+
+  <!-- MATERIALS -->
+  <section>
+    <p class="section-label">Open teaching materials</p>
+    <div class="card">
+      <div class="card-tags"><span class="tag tag-ml">GitHub</span></div>
+      <div class="card-title"><a href="https://github.com/paulmunozpauta" target="_blank">Jupyter Notebooks & course materials → github.com/paulmunozpauta</a></div>
+      <div class="card-sub">All course notebooks, datasets, and exercises are shared openly on GitHub following FAIR principles. Contributions and forks welcome.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Paul Muñoz · <span>paulmunoz.com</span></footer>
 </body>
 </html>

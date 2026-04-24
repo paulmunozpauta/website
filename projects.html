@@ -1,109 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · Paul Muñoz</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .project-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.3rem 1.4rem;
+    margin-bottom: 0.75rem;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.4rem;
+    align-items: start;
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .project-item:hover { border-color: rgba(30,111,168,0.3); transform: translateY(-1px); }
+
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding-top: 0.2rem;
+  }
+  .project-logo {
+    max-width: 90px;
+    max-height: 44px;
+    object-fit: contain;
+    filter: grayscale(20%);
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  .project-item:hover .project-logo { opacity: 1; }
+
+  .project-title {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.45;
+    margin-bottom: 0.25rem;
+  }
+  .project-meta {
+    font-size: 0.73rem;
+    color: var(--water);
+    font-weight: 500;
+    margin-bottom: 0.45rem;
+    font-style: italic;
+  }
+  .project-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .project-desc a {
+    color: var(--water);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .project-desc a:hover { text-decoration: underline; }
+</style>
 </head>
 <body>
 
-    <!-- Navigation will be inserted here -->
-    <div id="nav-placeholder"></div>
+<nav>
+  <a class="nav-brand" href="index.html">Paul Muñoz</a>
+  <ul class="nav-links">
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="courses.html">Teaching</a></li>
+    <li><a href="supervision.html">Supervision</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Projects</h1>
-    </header>
+<div class="page-hero">
+  <p class="hero-label">Research</p>
+  <h1>Projects</h1>
+  <div class="hero-stats">
+    <div class="stat"><strong>3</strong>Active projects</div>
+    <div class="stat"><strong>2</strong>Completed</div>
+    <div class="stat"><strong>Erasmus+ · VLIR-UOS · DAAD</strong>Funders</div>
+  </div>
+</div>
 
-<!-- Content -->
 <main>
-    <section id="projects" class="section">
-        <ul class="projects-list">
+  <section>
+    <p class="section-label">All projects</p>
 
-            <li class="project-item">
-                <div class="logo-box">
-                    <img src="images/erasmus.png" alt="Erasmus+" class="project-logo">
-                    <img src="images/vub.png" alt="VUB" class="project-logo">
-                </div>
-                <div>
-                    <strong>NbS-WISE. ERASMUS+ Cooperation partnerships in higher education: Nature-Based Solutions for Water Innovation, Sustainability, and Ecosystems</strong><br>
-                    <em>Belgium, Germany and Slovenia. 2025—2028</em><br>
-                    NBsWISE enhances Nature-Based Solutions for hydroclimatic risk management through education, research, digital tools, and stakeholder engagement. It integrates IoT sensors, AI models, and GIS tools to improve NbS monitoring. The project trains students, researchers, and policymakers, engages citizens in NbS monitoring, and fosters policy integration. Expected outcomes include digital learning resources, real-world case studies, and high-level stakeholder events.
-                    <a href="https://hydr.vub.be/projects/NbSWISE_Erasmus" target="_blank">Project website</a>
-                </div>
-            </li>
+    <div class="project-item">
+      <div class="logo-box">
+        <img src="images/erasmus.png" alt="Erasmus+" class="project-logo">
+        <img src="images/vub.png" alt="VUB" class="project-logo">
+      </div>
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-eu">Erasmus+</span>
+          <span class="tag tag-ongoing">2025–2028</span>
+        </div>
+        <div class="project-title">NbS-WISE — Nature-Based Solutions for Water Innovation, Sustainability, and Ecosystems</div>
+        <div class="project-meta">Belgium, Germany and Slovenia</div>
+        <div class="project-desc">
+          NBsWISE enhances Nature-Based Solutions for hydroclimatic risk management through education, research, digital tools, and stakeholder engagement. It integrates IoT sensors, AI models, and GIS tools to improve NbS monitoring. The project trains students, researchers, and policymakers, engages citizens in NbS monitoring, and fosters policy integration. Expected outcomes include digital learning resources, real-world case studies, and high-level stakeholder events.<br><br>
+          <a href="https://hydr.vub.be/projects/NbSWISE_Erasmus" target="_blank">→ Project website</a>
+        </div>
+      </div>
+    </div>
 
-            <li class="project-item">
-                <div class="logo-box">
-                    <img src="images/vliruos.png" alt="VLIR-UOS" class="project-logo">
-                    <img src="images/vub.png" alt="VUB" class="project-logo">
-                </div>
-                <div>
-                    <strong>AWARE. Empowering communities for resilient water management: A collaborative approach to hydroclimatic challenges in the Andes</strong><br>
-                    <em>Belgium and Ecuador. 2025—2027</em><br>
-                    UNESCO CRIDA application in urban and rural settings.<br>
-                    <a href="https://andesaware.com" target="_blank">Project website</a>
-                </div>
-            </li>
+    <div class="project-item">
+      <div class="logo-box">
+        <img src="images/vliruos.png" alt="VLIR-UOS" class="project-logo">
+        <img src="images/vub.png" alt="VUB" class="project-logo">
+      </div>
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-eu">VLIR-UOS</span>
+          <span class="tag tag-ongoing">2025–2027</span>
+        </div>
+        <div class="project-title">AWARE — Empowering communities for resilient water management: A collaborative approach to hydroclimatic challenges in the Andes</div>
+        <div class="project-meta">Belgium and Ecuador</div>
+        <div class="project-desc">
+          UNESCO CRIDA application in urban and rural settings.<br><br>
+          <a href="https://andesaware.com" target="_blank">→ Project website</a>
+        </div>
+      </div>
+    </div>
 
-            <li class="project-item">
-                <div class="logo-box">
-                    <img src="images/vub.png" alt="VUB" class="project-logo">
-                    <img src="images/DIGIWATER_logo_main.png" alt="Global Minds" class="project-logo">
-                </div>
-                <div>
-                    <strong>DIGIWATER. Building Resilient Water Futures in the Global South through Digital Tools and Citizen Engagement</strong><br>
-                    <em>Cuba. 2025—2026</em><br>
-                    DIGIWATER is a strategic initiative led by the Vrije Universiteit Brussel to catalyse long-term academic and institutional change in the Global South by strengthening collaboration with partners from Bolivia, Chile, Cuba, Ecuador, Peru, and South Africa in the field of water resilience. The long-term vision is to create an open, inclusive, and well-coordinated ecosystem where universities across Latin America, Africa, and Europe co-develop knowledge, apply digital tools, and engage in sustained collaboration on research and training for sustainable water governance.<br>
-                    <a href="https://digiwater.net" target="_blank">Project website</a>
-                </div>
-            </li>
+    <div class="project-item">
+      <div class="logo-box">
+        <img src="images/vub.png" alt="VUB" class="project-logo">
+        <img src="images/DIGIWATER_logo_main.png" alt="DIGIWATER" class="project-logo">
+      </div>
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-eu">Global Minds · VUB</span>
+          <span class="tag tag-ongoing">2025–2026</span>
+        </div>
+        <div class="project-title">DIGIWATER — Building Resilient Water Futures in the Global South through Digital Tools and Citizen Engagement</div>
+        <div class="project-meta">Cuba</div>
+        <div class="project-desc">
+          A strategic initiative led by VUB to catalyse long-term academic and institutional change in the Global South by strengthening collaboration with partners from Bolivia, Chile, Cuba, Ecuador, Peru, and South Africa in the field of water resilience. The long-term vision is to create an open, inclusive, and well-coordinated ecosystem where universities across Latin America, Africa, and Europe co-develop knowledge, apply digital tools, and engage in sustained collaboration on research and training for sustainable water governance.<br><br>
+          <a href="https://digiwater.net" target="_blank">→ Project website</a>
+        </div>
+      </div>
+    </div>
 
-            <li class="project-item">
-                <div class="logo-box">
-                    <img src="images/celec.png" alt="CELEC" class="project-logo">
-                    <img src="images/UCUENCA.png" alt="VUB" class="project-logo">
-                </div>
-                <div>
-                    <strong>Data fusion of near-real-time satellite products for improving runoff forecasting</strong><br>
-                    <em>Ecuador. 2021—2024</em><br>
-                    Integration of satellite precipitation and AI models for operational flood forecasting.
-                </div>
-            </li>
+    <div class="project-item">
+      <div class="logo-box">
+        <img src="images/celec.png" alt="CELEC" class="project-logo">
+        <img src="images/UCUENCA.png" alt="Universidad de Cuenca" class="project-logo">
+      </div>
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-ml">ML · Remote Sensing</span>
+          <span class="tag tag-completed">2021–2024</span>
+        </div>
+        <div class="project-title">Data fusion of near-real-time satellite products for improving runoff forecasting</div>
+        <div class="project-meta">Ecuador</div>
+        <div class="project-desc">
+          Integration of satellite precipitation and AI models for operational flood forecasting.
+        </div>
+      </div>
+    </div>
 
-            <li class="project-item">
-                <div class="logo-box">
-                    <img src="images/daad.jpg" alt="DAAD" class="project-logo">
-                    <img src="images/UCUENCA.png" alt="University of Cuenca" class="project-logo">
-                </div>
-                <div>
-                    <strong>Deutscher Akademischer Austauschdienst: Study trips for groups of foreign students in Germany</strong><br>
-                    <em>Germany. 2019</em><br>
-                    15 students from the Master’s program in Hydrology (Ecuador) traveled to Giessen University and Marburg University to present their research, learn from German universities, and engage in cultural immersion.
-                </div>
-            </li>
+    <div class="project-item">
+      <div class="logo-box">
+        <img src="images/daad.jpg" alt="DAAD" class="project-logo">
+        <img src="images/UCUENCA.png" alt="Universidad de Cuenca" class="project-logo">
+      </div>
+      <div>
+        <div class="card-tags">
+          <span class="tag tag-rs">DAAD</span>
+          <span class="tag tag-completed">2019</span>
+        </div>
+        <div class="project-title">Deutscher Akademischer Austauschdienst — Study trips for groups of foreign students in Germany</div>
+        <div class="project-meta">Germany</div>
+        <div class="project-desc">
+          15 students from the Master's program in Hydrology (Ecuador) traveled to Giessen University and Marburg University to present their research, learn from German universities, and engage in cultural immersion.
+        </div>
+      </div>
+    </div>
 
-        </ul>
-    </section>
+  </section>
 </main>
 
-    <!-- Footer will be inserted here -->
-    <div id="footer-placeholder"></div>
-
-
-    <script>
-        fetch('components.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-nav").innerHTML;
-
-                document.getElementById("footer-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-footer").innerHTML;
-            });
-    </script>
+<footer>© 2025 Paul Muñoz · <span>paulmunoz.com</span></footer>
 </body>
 </html>

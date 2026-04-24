@@ -1,59 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Paul Muñoz</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .contact-block { display: flex; flex-direction: column; gap: 0.75rem; }
+  .contact-item {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1rem 1.2rem;
+    display: flex; align-items: flex-start; gap: 0.9rem;
+  }
+  .contact-icon { font-size: 1.1rem; margin-top: 0.1rem; flex-shrink: 0; }
+  .contact-label { font-size: 0.67rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 0.2rem; }
+  .contact-value { font-size: 0.85rem; font-weight: 500; color: var(--text); }
+  .contact-value a { color: var(--water); text-decoration: none; }
+  .contact-value a:hover { text-decoration: underline; }
+
+  .map-placeholder {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+    height: 220px; position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .map-placeholder iframe {
+    width: 100%; height: 100%; border: none;
+  }
+
+  .social-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;
+  }
+  .social-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1rem 1.1rem;
+    text-decoration: none; color: var(--text);
+    transition: border-color 0.2s, transform 0.15s;
+    display: flex; flex-direction: column; gap: 0.35rem;
+  }
+  .social-card:hover { border-color: rgba(30,111,168,0.35); transform: translateY(-2px); }
+  .social-card-icon { font-size: 1.2rem; }
+  .social-card-name { font-size: 0.82rem; font-weight: 500; color: var(--text); }
+  .social-card-handle { font-size: 0.72rem; color: var(--muted); }
+</style>
 </head>
 <body>
-    <!-- Navigation will be inserted here -->
-    <div id="nav-placeholder"></div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Contact</h1>
-    </header>
+<nav>
+  <a class="nav-brand" href="index.html">Paul Muñoz</a>
+  <ul class="nav-links">
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="courses.html">Teaching</a></li>
+    <li><a href="supervision.html">Supervision</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
 
+<div class="page-hero">
+  <p class="hero-label">Get in touch</p>
+  <h1>Contact</h1>
+</div>
 
+<main>
 
-    <main>
-        <p>Email: <a href="mailto:paul.munoz@vub.be">paul.munoz@vub.be</a></p>
+  <div class="contact-wrap">
 
-        <!-- Email Box Section -->
-        <div class="contact-box">
-            <form action="mailto:paul.munoz@vub.be" method="post" enctype="text/plain">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-                <button type="submit" class="btn">Send Email</button>
-            </form>
+    <div class="contact-block">
+      <div class="contact-item">
+        <span class="contact-icon">🏛️</span>
+        <div>
+          <div class="contact-label">Affiliation</div>
+          <div class="contact-value">Dept. of Water Resources<br>Universidad de Concepción, Chile</div>
         </div>
+      </div>
 
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <div class="contact-label">Address</div>
+          <div class="contact-value">Facultad de Ingeniería Agrícola<br>Av. Vicente Méndez 595<br>Chillán, Chile</div>
+        </div>
+      </div>
 
-    </main>
-    <!-- Footer will be inserted here -->
-    <div id="footer-placeholder"></div>
+      <div class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:paul.munoz@udec.cl">paulmunoz@udec.cl</a></div>
+        </div>
+      </div>
 
+      <div class="contact-item">
+        <span class="contact-icon">🔗</span>
+        <div>
+          <div class="contact-label">ORCID</div>
+          <div class="contact-value"><a href="https://orcid.org/0000-0002-8000-8840" target="_blank">0000-0002-8000-8840</a></div>
+        </div>
+      </div>
+    </div>
 
-    <script>
-        fetch('components.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-nav").innerHTML;
+    <div>
+      <div class="map-placeholder">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.6!2d-72.1159!3d-36.6066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966be5a66a5c6b4d%3A0x1a5a0c2e0b8a1234!2sUniversidad%20de%20Concepci%C3%B3n%2C%20Chill%C3%A1n!5e0!3m2!1sen!2scl!4v1"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
 
-                document.getElementById("footer-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-footer").innerHTML;
-            });
-    </script>
+  </div>
+
+  <!-- SOCIAL PROFILES -->
+  <section>
+    <p class="section-label">Find me online</p>
+    <div class="social-grid">
+      <a class="social-card" href="https://www.linkedin.com/in/paul-mu%C3%B1oz-424432225/" target="_blank">
+        <span class="social-card-icon">💼</span>
+        <div class="social-card-name">LinkedIn</div>
+        <div class="social-card-handle">Paul Muñoz</div>
+      </a>
+      <a class="social-card" href="https://github.com/paulmunozpauta" target="_blank">
+        <span class="social-card-icon">🐙</span>
+        <div class="social-card-name">GitHub</div>
+        <div class="social-card-handle">@paulmunozpauta</div>
+      </a>
+      <a class="social-card" href="https://x.com/paulmunozpauta" target="_blank">
+        <span class="social-card-icon">𝕏</span>
+        <div class="social-card-name">X / Twitter</div>
+        <div class="social-card-handle">@paulmunozpauta</div>
+      </a>
+      <a class="social-card" href="https://www.researchgate.net/profile/Paul-Munoz-2" target="_blank">
+        <span class="social-card-icon">🔬</span>
+        <div class="social-card-name">ResearchGate</div>
+        <div class="social-card-handle">Paul Muñoz</div>
+      </a>
+      <a class="social-card" href="https://orcid.org/0000-0002-8000-8840" target="_blank">
+        <span class="social-card-icon">🆔</span>
+        <div class="social-card-name">ORCID</div>
+        <div class="social-card-handle">0000-0002-8000-8840</div>
+      </a>
+      <a class="social-card" href="https://scholar.google.com" target="_blank">
+        <span class="social-card-icon">🎓</span>
+        <div class="social-card-name">Google Scholar</div>
+        <div class="social-card-handle">Paul Muñoz</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CV DOWNLOAD -->
+  <section>
+    <p class="section-label">Curriculum Vitae</p>
+    <a href="CV/CV_PMunoz_Oct24.pdf" class="cv-btn" download>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download CV — last updated October 2024
+    </a>
+  </section>
+
+</main>
+
+<footer>© 2025 Paul Muñoz · <span>paulmunoz.com</span></footer>
 </body>
 </html>

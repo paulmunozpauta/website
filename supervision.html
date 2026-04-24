@@ -1,86 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supervision</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supervision · Paul Muñoz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation will be inserted here -->
-    <div id="nav-placeholder"></div>
+<nav>
+  <a class="nav-brand" href="index.html">Paul Muñoz</a>
+  <ul class="nav-links">
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="courses.html">Teaching</a></li>
+    <li><a href="supervision.html" class="active">Supervision</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Supervision</h1>
-    </header>
+<div class="page-hero">
+  <p class="hero-label">Mentoring</p>
+  <h1>Supervision</h1>
+  <div class="hero-stats">
+    <div class="stat"><strong>PhD · MSc · BSc</strong>All levels</div>
+    <div class="stat"><strong>UdeC · VUB</strong>Institutions</div>
+  </div>
+</div>
 
+<main>
 
-    <main>
-    
-        <!-- PhD Students Section -->
-        <section>
-            <h2>PhD</h2>
-            <h3>Ongoing</h3>
-            <ul>
-                <li>2025. Patricio Luna: <i>Ecuador.</i>Towards a Digital Twin for a mountainous catchment: An integrated framework for data assimilation and uncertainty quantification using deep learning.</li>              
- 
-                <!-- Add more PhD students -->
-            </ul>
-        </section>
-    
-        <!-- Master's Students Section -->
-        <section>
-            <h2>Master</h2>
+  <section>
+    <p class="section-label">Supervision approach</p>
+    <div class="card" style="border-left: 3px solid var(--accent);">
+      <div class="card-sub" style="font-size:0.88rem; line-height:1.7; color:var(--text);">
+        I supervise students working at the intersection of hydrology, machine learning, and remote sensing. I prioritize open science practices — all thesis code and data are shared via GitHub. I am particularly interested in co-supervising students from Latin American institutions on topics related to Andean hydrology, early warning systems, and climate adaptation.
+      </div>
+    </div>
+  </section>
 
-            <h3>Ongoing</h3>
-            <ul>
-                <li>2025-2027. Danny Aucapiña: Ecohydrological vulnerability and resilience of a páramo catchment under climate stress: a bottom-up 
-modeling approach.</li>
-                <li>2024-2026. Togzhan Tangbay: Uncertainty-aware hydrological forecasting using satellite precipitation and probabilistic machine learning. MSc. programme in Water Resources Engineering, Belgium.</li>
-                <!-- Add more Master's students -->
-            </ul>
+  <!-- PHD -->
+  <section>
+    <p class="section-label">PhD supervision</p>
 
-            <h3>Graduated</h3>
-            <ul>
-                <li>2022-2024. Patricio Luna: Assessing the Effectiveness of the Three-Cornered Hat Method for Satellite Precipitation Data Fusion and its Impact on Runoff Forecasting. Article under review. Master program in Hydrology, Ecuador.</li>
-                <li>2022-2024. Mateo Vélez: Advancing timely satellite precipitation for IMERG-ER using GOES-16 data and a U-net convolutional neural network modelling approach. Article published. Master program in Hydrology, Ecuador.</li>
-                <li>2021-2023. Julio Álvarez: Enhancing peak runoff forecasting through feature engineering applied to X-band radar data</i>. Article published. Master program in Hydrology, Ecuador.</li>
-                <!-- <li>2021-2023. María José Merizalde: <i>Integrating geographic data and the SCS-CN method with LSTM networks for enhanced runoff forecasting in a complex mountain basin</i>. Article published. Master program in Hydrology, Ecuador.</li> -->
-                <!-- Add more Master's students -->
-            </ul>
-        </section>
-    
-        <!-- Undergraduate Students Section -->
-        <section>
-            <h2>Undergraduate</h2>
-            <h3>Graduated</h3>
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-ongoing">Current · Universidad de Cuenca, Ecuador</span>
+        <span class="tag tag-ml">Machine Learning</span>
+        <div class="card-sub">Luna Abril, P (2025-present). Co-supervision with Dept. of Water Resources and Environmental Sciences, Universidad de Cuenca, Ecuador. Focus on developing a digital twin for a tropical mountain basin.</div>
+      </div>
+    </div>
 
-            <ul>
-                <li>2024. Josué Muñoz: Reducing latency in satellite-based precipitation estimates using GOES-16 and machine learning. Article published. Civil Engineering, Ecuador.</li>
+  </section>
 
-                <!-- Add more undergraduate students -->
-            </ul>
-        </section>
-    </main>
-    
-    <!-- Footer will be inserted here -->
-    <div id="footer-placeholder"></div>
+  <!-- MSC -->
 
 
-    <script>
-        fetch('components.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("nav-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-nav").innerHTML;
+  <section>
+    <p class="section-label">MSc supervision</p>
 
-                document.getElementById("footer-placeholder").innerHTML = 
-                    new DOMParser().parseFromString(data, "text/html")
-                    .getElementById("shared-footer").innerHTML;
-            });
-    </script>
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-ongoing">Current · Universidad de Cuenca, Ecuador</span>
+      </div>
+        <span class="tag tag-ml">Climate change impacts</span>
+
+      <div class="card-title">Ecohydrological vulnerability and resilience of a páramo catchment under climate stress: a bottom-up modeling approach</div>
+      <div class="card-sub">Aucapiña, D. (2025-2027). MSc thesis using climate stress tests to assess hydrological vulnerability and resilience to climate change at local scales.</div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-ongoing">Current · Vrije Universiteit Brussel, Belgium </span>
+      </div>
+        <span class="tag tag-ml">Probabilistic machine learning</span>
+
+      <div class="card-title">Uncertainty-aware hydrological
+forecasting using satellite precipitation
+and probabilistic machine learning</div>
+      <div class="card-sub">Tangbay, T (2024-2026). MSc thesis using machine learning probabilistic runoff forecasting</div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-completed">Completed · Universidad de Cuenca, Ecuador</span>
+        <span class="tag tag-ml">Data fusion</span>
+      </div>
+      <div class="card-title">Evaluating the three-cornered hat method for hourly satellite precipitation fusion in hydrological forecasting
+</div>
+      <div class="card-sub">Luna Abril, P. — Published in Journal of Hydrology: Regional Studies (2026). Satellite precipitation data fusion without requiring ground truth data.</div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-completed">Completed · Universidad de Cuenca, Ecuador</span>
+        <span class="tag tag-ml">LSTM</span>
+      </div>
+      <div class="card-title">Integrating SCS-CN and LSTM Networks for Runoff Forecasting</div>
+      <div class="card-sub">Merizalde, M.J. — Published in Frontiers in Water (2023). Combined geographic data with process-based knowledge to improve LSTM runoff prediction in a complex mountain basin.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-completed">Completed · Universidad de Cuenca, Ecuador</span>
+        <span class="tag tag-rs">GOES-16</span>
+      </div>
+      <div class="card-title">Reducing Latency in IMERG Using GOES-16 and Machine Learning</div>
+      <div class="card-sub">Vélez-Hernández, M. — Published in Environmental Modelling & Software (2025). U-Net CNN approach to reduce the 4-hour latency of IMERG Early Run products.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-completed">Completed · Universidad de Cuenca, Ecuador</span>
+        <span class="tag tag-ml">Meteorological Weather Radar</span>
+      </div>
+      <div class="card-title">Feature Engineering Applied to X-Band Radar Data for Runoff Forecasting</div>
+      <div class="card-sub">Álvarez-Estrella, J. — Published in Water (2024). Systematic feature engineering pipeline applied to X-band radar reflectivity for peak runoff prediction.</div>
+    </div>
+  </section>
+
+  <!-- BSC -->
+  <section>
+    <p class="section-label">BSc supervision</p>
+
+    <div class="card">
+      <div class="card-tags">
+        <span class="tag tag-completed">Completed · Universidad de Cuenca, Ecuador</span>
+      </div>
+      <div class="card-title">Multiple undergraduate theses in water resources and hydroinformatics</div>
+      <div class="card-sub">Topics include flood frequency analysis, GIS-based hydrological modelling, and open-data pipelines for streamflow monitoring in Chilean river basins.</div>
+    </div>
+  </section>
+
+  <!-- OPEN POSITIONS -->
+  <section>
+    <p class="section-label">Open to supervising</p>
+    <div class="card" style="background: var(--sky); border-color: rgba(91,196,240,0.3);">
+      <div class="card-title">Interested in joining? Get in touch.</div>
+      <div class="card-sub" style="margin-top:0.4rem;">I welcome applications from motivated students interested in any of these topics: machine learning for hydrology, satellite precipitation, flood and drought early warning, climate extremes, and open science in water resources. Positions at UdeC (Chile) and through co-supervision agreements with VUB (Belgium). <a href="contact.html" style="color:var(--water); font-weight:500;">→ Contact me</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2025 Paul Muñoz · <span>paulmunoz.com</span></footer>
 </body>
 </html>
