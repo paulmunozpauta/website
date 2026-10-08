@@ -306,3 +306,71 @@ footer {
   text-align: center; padding: 1.4rem; font-size: 0.72rem;
 }
 footer span { color: var(--accent); }
+
+/* Press cards */
+.media-item a.media-link,
+.media-item a.media-link:visited,
+.media-item a.media-link:hover,
+.media-item a.media-link:focus {
+  display: block;
+  height: 100%;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.media-link * {
+  text-decoration: none;
+}
+
+.media-content {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.media-meta {
+  font-size: 0.7rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.media-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+
+.media-summary {
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.media-action {
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: var(--water);
+}
+
+.media-link:hover .media-title {
+  color: var(--water);
+}
+
+.media-link:hover .media-action {
+  text-decoration: underline;
+}
+
+.media-link:focus-visible {
+  outline: 3px solid var(--water);
+  outline-offset: -3px;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
