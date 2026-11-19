@@ -5,43 +5,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Outreach · Paul Muñoz</title>
 <link rel="stylesheet" href="style.css">
+
 <style>
   .media-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
   }
+
   .media-item {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 12px; overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
     transition: border-color 0.2s, transform 0.15s;
   }
-  .media-item:hover { border-color: rgba(30,111,168,0.3); transform: translateY(-1px); }
-  .media-item img { width: 100%; height: 180px; object-fit: cover; display: block; }
+
+  .media-item:hover {
+    border-color: rgba(30,111,168,0.3);
+    transform: translateY(-1px);
+  }
+
+  .media-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
 
   .egu-item {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 12px; padding: 1.2rem 1.3rem; margin-bottom: 0.75rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem 1.3rem;
+    margin-bottom: 0.75rem;
     transition: border-color 0.2s, transform 0.15s;
   }
-  .egu-item:hover { border-color: rgba(30,111,168,0.3); transform: translateY(-1px); }
-  .egu-year {
-    display: inline-block; font-size: 0.65rem; font-weight: 600;
-    letter-spacing: 0.1em; text-transform: uppercase;
-    background: var(--sky); color: var(--water);
-    padding: 0.12rem 0.5rem; border-radius: 100px; margin-bottom: 0.5rem;
+
+  .egu-item:hover {
+    border-color: rgba(30,111,168,0.3);
+    transform: translateY(-1px);
   }
-  .egu-role { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; margin-bottom: 0.3rem; }
-  .egu-title { font-size: 0.88rem; font-weight: 500; color: var(--text); line-height: 1.45; margin-bottom: 0.4rem; }
-  .egu-title a { color: var(--water); text-decoration: none; }
-  .egu-title a:hover { text-decoration: underline; }
-  .egu-conveners { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.5rem; line-height: 1.5; }
-  .egu-conveners strong { color: var(--water); font-weight: 500; }
-  .egu-desc { font-size: 0.76rem; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 0.55rem; }
+
+  .egu-year {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--sky);
+    color: var(--water);
+    padding: 0.12rem 0.5rem;
+    border-radius: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .egu-role {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+
+  .egu-title {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.45;
+    margin-bottom: 0.4rem;
+  }
+
+  .egu-title a {
+    color: var(--water);
+    text-decoration: none;
+  }
+
+  .egu-title a:hover {
+    text-decoration: underline;
+  }
+
+  .egu-conveners {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .egu-conveners strong {
+    color: var(--water);
+    font-weight: 500;
+  }
+
+  .egu-desc {
+    font-size: 0.76rem;
+    color: var(--muted);
+    line-height: 1.6;
+    border-top: 1px solid var(--border);
+    padding-top: 0.55rem;
+  }
+
+  @media (max-width: 600px) {
+    .media-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
+
 </head>
+
 <body>
 
+<!-- Navigation -->
 <nav>
   <a class="nav-brand" href="index.html">Paul Muñoz</a>
+
   <ul class="nav-links">
     <li><a href="projects.html">Projects</a></li>
     <li><a href="publications.html">Publications</a></li>
@@ -52,145 +132,407 @@
   </ul>
 </nav>
 
+
+<!-- Page Hero -->
 <div class="page-hero">
+
   <p class="hero-label">Science Communication & Service</p>
+
   <h1>Outreach</h1>
+
   <div class="hero-stats">
-    <div class="stat"><strong>3</strong>EGU sessions co-convened</div>
-    <div class="stat"><strong>2024–2026</strong>Span</div>
-    <div class="stat"><strong>Media</strong>Press & TV</div>
+
+    <div class="stat">
+      <strong>4</strong>
+      EGU sessions co-convened
+    </div>
+
+    <div class="stat">
+      <strong>1</strong>
+      National session convened
+    </div>
+
+    <div class="stat">
+      <strong>2024–2027</strong>
+      Scientific engagement
+    </div>
+
   </div>
+
 </div>
+
 
 <main>
 
-  <section>
-    <p class="section-label">Scientific engagement</p>
-
-    <div class="egu-item">
-      <span class="egu-year">EGU 2026</span>
-      <div class="egu-role">Session co-convener</div>
-      <div class="egu-title">
-        <a href="https://meetingorganizer.copernicus.org/EGU26/session/56816" target="_blank">
-          HS3 – EDI: Innovative solutions for resilient water, health, and environmental systems under climate change
-        </a>
-      </div>
-      <div class="egu-conveners">Gerald Corzo · Jeewanthi Sirisena · <strong>Paul Muñoz</strong></div>
-      <div class="egu-desc">Highlights innovative and interdisciplinary approaches that strengthen resilience in water, health, and environmental systems. Emphasizes integration of hydroinformatics, AI/ML, remote sensing, ICTs, and socio-economic perspectives to enhance monitoring, forecasting, and decision-making under climate change.</div>
-    </div>
-
-    <div class="egu-item">
-      <span class="egu-year">EGU 2025</span>
-      <div class="egu-role">Session co-convener</div>
-      <div class="egu-title">
-        <a href="https://meetingorganizer.copernicus.org/EGU25/session/52690" target="_blank">
-          HS3.5 – Innovative Approaches in Hydroinformatics and Stakeholder Engagement for Managing Hydrological Extremes in Diverse Basins
-        </a>
-      </div>
-      <div class="egu-conveners">Gerald Corzo · Wenfeng Liu · Jeewanthi Sirisena · Carole Dalin · Yunqing Xuan · <strong>Paul Muñoz</strong></div>
-      <div class="egu-desc">Explores the integration of stakeholder engagement and advanced hydroinformatics techniques — remote sensing, machine learning, AI, and numerical modeling — to address challenges in hydrological sciences and natural hazards. Emphasizing both theoretical advancements and practical applications, particularly those involving co-development of research with decision-makers.</div>
-    </div>
-
-    <div class="egu-item">
-      <span class="egu-year">EGU 2024</span>
-      <div class="egu-role">Session co-convener</div>
-      <div class="egu-title">
-        <a href="https://meetingorganizer.copernicus.org/EGU24/session/48092" target="_blank">
-          HS3.2 – Integrated Approaches for Resilient Water Systems: Spatio-Temporal Analysis and Uncertainty Management
-        </a>
-      </div>
-      <div class="egu-conveners">Yunqing Xuan · Gerald A. Corzo P · Vitali Diaz · Peter van Thienen · Georgia Papacharalampous · <strong>Paul Muñoz</strong></div>
-      <div class="egu-desc">Addresses the challenges of managing water systems across spatial and temporal scales, focusing on hydrological extremes and uncertainty in planning and decision-making. Integrates spatio-temporal analysis and uncertainty management in water networks, highlighting remote sensing, statistical methods, and machine learning to improve prediction, risk assessment, and resilience in both urban and rural contexts.</div>
-    </div>
-  </section>
+<!-- ================================================== -->
+<!-- SCIENTIFIC ENGAGEMENT -->
+<!-- ================================================== -->
 
 <section>
+
+  <p class="section-label">Scientific engagement</p>
+
+
+  <!-- EGU 2027 -->
+  <div class="egu-item">
+
+    <span class="egu-year">EGU 2027</span>
+
+    <div class="egu-role">
+      Session co-convener · Vienna, Austria · 4–9 April 2027
+    </div>
+
+    <div class="egu-title">
+      <a href="https://meetingorganizer.copernicus.org/EGU27/session/61785"
+         target="_blank" rel="noopener noreferrer">
+
+        HS3.6 – Data-driven understanding of hydroclimatic extremes:
+        from observations to processes, prediction and risk
+
+      </a>
+    </div>
+
+    <div class="egu-conveners">
+      Jeewanthi Sirisena ·
+      <strong>Paul Muñoz</strong> ·
+      Vitali Diaz ·
+      Febe Ortiz
+    </div>
+
+    <div class="egu-desc">
+      Explores data-driven and hybrid approaches to understanding and
+      predicting hydroclimatic extremes, including floods, droughts,
+      heatwaves, and compound events. Emphasizes the integration of
+      Earth observations, machine learning, process-informed modelling,
+      and multiple data sources to improve prediction, risk assessment,
+      and understanding of extreme events, particularly in data-scarce regions.
+    </div>
+
+  </div>
+
+
+  <!-- IV JORNADA DE HIDROLOGIA 2027 -->
+  <div class="egu-item">
+
+    <span class="egu-year">IV Jornada de Hidrología 2027</span>
+
+    <div class="egu-role">
+      Session convener · Santiago, Chile · 20–22 January 2027
+    </div>
+
+    <div class="egu-title">
+      <a href="https://jornadahidrologia.uchile.cl/"
+         target="_blank" rel="noopener noreferrer">
+
+        Session 3 – Pronóstico hidrometeorológico:
+        métodos, desempeño e incertidumbre
+
+      </a>
+    </div>
+
+    <div class="egu-conveners">
+      <strong>Paul Muñoz</strong> ·
+      Cristián Chadwick ·
+      María de los Ángeles Ibáñez
+    </div>
+
+    <div class="egu-desc">
+      Focuses on advances in hydrometeorological forecasting across
+      different spatial and temporal scales, including process-based,
+      statistical, machine learning, and AI approaches. Covers
+      deterministic and probabilistic forecasting, data assimilation,
+      bias correction, predictability, forecast verification,
+      uncertainty quantification, and early warning systems
+      for decision-making.
+    </div>
+
+  </div>
+
+
+  <!-- EGU 2026 -->
+  <div class="egu-item">
+
+    <span class="egu-year">EGU 2026</span>
+
+    <div class="egu-role">
+      Session co-convener
+    </div>
+
+    <div class="egu-title">
+      <a href="https://meetingorganizer.copernicus.org/EGU26/session/56816"
+         target="_blank" rel="noopener noreferrer">
+
+        HS3 – EDI: Innovative solutions for resilient water,
+        health, and environmental systems under climate change
+
+      </a>
+    </div>
+
+    <div class="egu-conveners">
+      Gerald Corzo ·
+      Jeewanthi Sirisena ·
+      <strong>Paul Muñoz</strong>
+    </div>
+
+    <div class="egu-desc">
+      Highlights innovative and interdisciplinary approaches that
+      strengthen resilience in water, health, and environmental systems.
+      Emphasizes integration of hydroinformatics, AI/ML, remote sensing,
+      ICTs, and socio-economic perspectives to enhance monitoring,
+      forecasting, and decision-making under climate change.
+    </div>
+
+  </div>
+
+
+  <!-- EGU 2025 -->
+  <div class="egu-item">
+
+    <span class="egu-year">EGU 2025</span>
+
+    <div class="egu-role">
+      Session co-convener
+    </div>
+
+    <div class="egu-title">
+      <a href="https://meetingorganizer.copernicus.org/EGU25/session/52690"
+         target="_blank" rel="noopener noreferrer">
+
+        HS3.5 – Innovative Approaches in Hydroinformatics and
+        Stakeholder Engagement for Managing Hydrological Extremes
+        in Diverse Basins
+
+      </a>
+    </div>
+
+    <div class="egu-conveners">
+      Gerald Corzo ·
+      Wenfeng Liu ·
+      Jeewanthi Sirisena ·
+      Carole Dalin ·
+      Yunqing Xuan ·
+      <strong>Paul Muñoz</strong> ·
+      Loc Ho
+    </div>
+
+    <div class="egu-desc">
+      Explores the integration of stakeholder engagement and advanced
+      hydroinformatics techniques — remote sensing, machine learning,
+      AI, and numerical modeling — to address challenges in hydrological
+      sciences and natural hazards. Emphasizes both theoretical advancements
+      and practical applications, particularly those involving
+      co-development of research with decision-makers.
+    </div>
+
+  </div>
+
+
+  <!-- EGU 2024 -->
+  <div class="egu-item">
+
+    <span class="egu-year">EGU 2024</span>
+
+    <div class="egu-role">
+      Session co-convener
+    </div>
+
+    <div class="egu-title">
+      <a href="https://meetingorganizer.copernicus.org/EGU24/session/48092"
+         target="_blank" rel="noopener noreferrer">
+
+        HS3.2 – Integrated Approaches for Resilient Water Systems:
+        Spatio-Temporal Analysis and Uncertainty Management
+
+      </a>
+    </div>
+
+    <div class="egu-conveners">
+      Yunqing Xuan ·
+      Gerald A. Corzo P ·
+      Vitali Diaz ·
+      Peter van Thienen ·
+      Georgia Papacharalampous ·
+      <strong>Paul Muñoz</strong>
+    </div>
+
+    <div class="egu-desc">
+      Addresses the challenges of managing water systems across spatial
+      and temporal scales, focusing on hydrological extremes and uncertainty
+      in planning and decision-making. Integrates spatio-temporal analysis
+      and uncertainty management in water networks, highlighting remote
+      sensing, statistical methods, and machine learning to improve
+      prediction, risk assessment, and resilience in both urban and rural contexts.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================================================== -->
+<!-- MEDIA AND PUBLIC COMMUNICATION -->
+<!-- ================================================== -->
+
+<section>
+
   <p class="section-label">Media & public communication</p>
 
   <div class="media-grid">
 
+
+    <!-- LA DISCUSION OCTOBER 2026 -->
     <article class="media-item">
+
       <a class="media-link"
          href="https://ladiscusion.cl/implementan-estacion-meteorologica-de-bajo-costo-en-el-campus-chillan-de-la-udec/"
-         target="_blank" rel="noopener noreferrer">
+         target="_blank"
+         rel="noopener noreferrer">
 
-        <img src="images/pictures/outreach/ladiscusionoctubre26.png"
-             alt="Low-cost weather station installed at UdeC Campus Chillán"
-             loading="lazy">
+        <img
+          src="images/pictures/outreach/ladiscusionoctubre26.png"
+          alt="Low-cost weather station installed at UdeC Campus Chillán"
+          loading="lazy">
 
         <div class="media-content">
+
           <div class="card-tags">
             <span class="tag tag-rs">Research news</span>
           </div>
-          <p class="media-meta">La Discusión · 7 October 2026 · Spanish</p>
+
+          <p class="media-meta">
+            La Discusión · 7 October 2026 · Spanish
+          </p>
+
           <h2 class="media-title">
-            Implementan estación meteorológica de bajo costo en el Campus Chillán de la UdeC
+            Implementan estación meteorológica de bajo costo
+            en el Campus Chillán de la UdeC
           </h2>
+
           <p class="media-summary">
             A low-cost weather station supporting local monitoring,
             research and teaching, with plans to improve weather
             forecasts using AI.
           </p>
-          <span class="media-action">Read article ↗</span>
+
+          <span class="media-action">
+            Read article ↗
+          </span>
+
         </div>
+
       </a>
+
     </article>
 
+
+    <!-- LA DISCUSION SEPTEMBER 2026 -->
     <article class="media-item">
+
       <a class="media-link"
          href="https://diariopapel.ladiscusion.cl/papeldigital/2026/septiembre/20092026/index.html#p=17"
-         target="_blank" rel="noopener noreferrer">
+         target="_blank"
+         rel="noopener noreferrer">
 
-        <img src="images/pictures/outreach/ladiscusionsep26.png"
-             alt="Paul Muñoz’s opinion column in La Discusión"
-             loading="lazy">
+        <img
+          src="images/pictures/outreach/ladiscusionsep26.png"
+          alt="Paul Muñoz’s opinion column in La Discusión"
+          loading="lazy">
 
         <div class="media-content">
+
           <div class="card-tags">
             <span class="tag tag-ew">Opinion column</span>
           </div>
-          <p class="media-meta">La Discusión · 20 September 2026 · Spanish</p>
+
+          <p class="media-meta">
+            La Discusión · 20 September 2026 · Spanish
+          </p>
+
           <h2 class="media-title">
-            La revolución de la inteligencia artificial frente a una agricultura y un clima cambiantes
+            La revolución de la inteligencia artificial frente
+            a una agricultura y un clima cambiantes
           </h2>
+
           <p class="media-summary">
             How AI can support agriculture, water management and
-            preparedness for a changing climate in Ñuble, alongside
-            expert knowledge and critical thinking.
+            preparedness for a changing climate in Ñuble,
+            alongside expert knowledge and critical thinking.
           </p>
-          <span class="media-action">Read column · page 17 ↗</span>
+
+          <span class="media-action">
+            Read column · page 17 ↗
+          </span>
+
         </div>
+
       </a>
+
     </article>
 
+
+    <!-- EL MERCURIO -->
     <div class="media-item">
-      <img src="images/pictures/outreach/mercurio.png"
-           alt="El Mercurio — Newspaper article"
-           loading="lazy">
+
+      <img
+        src="images/pictures/outreach/mercurio.png"
+        alt="El Mercurio — Newspaper article"
+        loading="lazy">
+
     </div>
 
+
+    <!-- UNION TV -->
     <div class="media-item">
-      <img src="images/pictures/outreach/unsiontv.png"
-           alt="Unión TV — Television interview"
-           loading="lazy">
+
+      <img
+        src="images/pictures/outreach/unsiontv.png"
+        alt="Unión TV — Television interview"
+        loading="lazy">
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================================================== -->
+<!-- PEER REVIEW SERVICE -->
+<!-- ================================================== -->
+
+<section>
+
+  <p class="section-label">Peer review service</p>
+
+  <div class="card">
+
+    <div class="card-tags">
+      <span class="tag tag-ml">Reviewer</span>
+    </div>
+
+    <div class="card-title">
+      Journals reviewed for
+    </div>
+
+    <div class="card-sub">
+      Nature Communications ·
+      Journal of Hydrologic Engineering ·
+      Natural Hazards
     </div>
 
   </div>
+
 </section>
-
-  <section>
-    <p class="section-label">Peer review service</p>
-    <div class="card">
-      <div class="card-tags"><span class="tag tag-ml">Reviewer</span></div>
-      <div class="card-title">Journals reviewed for</div>
-      <div class="card-sub">Nature communications · Journal of Hydrologic Engineering ·  Natural Hazards</div>
-    </div>
-  </section>
-
 
 
 </main>
 
-<footer>© 2026 Paul Muñoz </footer>
+
+<!-- Footer -->
+<footer>
+  © 2026 Paul Muñoz
+</footer>
+
 </body>
 </html>
